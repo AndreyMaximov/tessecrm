@@ -25,7 +25,7 @@ function email_registration_user_insert(&$edit, &$account, $category = NULL) {
     // Strip off everything after the @ sign.
     $new_name = preg_replace('/@.*$/', '', $edit['mail']);
     // Clean up the username.
-    $new_name = email_registration_cleanup_username($new_name);
+    $new_name = email_registration_cleanup_username($new_name, $account->uid);
   }
   else {
     // One would expect a single implementation of the hook, but if there
@@ -67,7 +67,7 @@ function email_registration_user_insert(&$edit, &$account, $category = NULL) {
  *
  * @see user_validate_name()
  */
-function email_registration_unique_username($name, $uid = 0) {
+function email_registration_unique_username($name, $uid) {
   // Iterate until we find a unique name.
   $i = 0;
   do {
@@ -92,7 +92,7 @@ function email_registration_unique_username($name, $uid = 0) {
  * @return string
  *   Cleaned up username.
  */
-function email_registration_cleanup_username($name) {
+function email_registration_cleanup_username($name, $uid = NULL) {
   // Strip illegal characters.
   $name = preg_replace('/[^\x{80}-\x{F7} a-zA-Z0-9@_.\'-]/', '', $name);
 
@@ -104,6 +104,11 @@ function email_registration_cleanup_username($name) {
 
   // If there's nothing left use a default.
   $name = ('' === $name) ? t('user') : $name;
+
+  if (!empty($uid)) {
+    // Put uid on the end of the name.
+    $name = $name . '_' . $uid;
+  }
 
   // Truncate to a reasonable size.
   $name = (drupal_strlen($name) > (USERNAME_MAX_LENGTH - 10)) ? drupal_substr($name, 0, USERNAME_MAX_LENGTH - 11) : $name;
