@@ -1,0 +1,137 @@
+.front .tabs {
+  display: none;
+}
+
+.front-page-links {
+  margin-top: 40px;
+}
+.front-page-links a {
+  font-size: 36px;
+  line-height: 200px;
+  padding: 0;
+  border-radius: 100px;
+  font-family: Arial;
+  color: #FFF;
+  text-shadow: #666 0 1px 0;
+  display: block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+  .front-page-links a:hover {
+    text-decoration: none;
+    box-shadow: #000 0 0 15px;
+  }
+
+  .front-page-links .new-client {
+    background-image: linear-gradient(bottom, #D84279 30%, #F26F9F 72%);
+    background-image: -o-linear-gradient(bottom, #D84279 30%, #F26F9F 72%);
+    background-image: -moz-linear-gradient(bottom, #D84279 30%, #F26F9F 72%);
+    background-image: -webkit-linear-gradient(bottom, #D84279 30%, #F26F9F 72%);
+    background-image: -ms-linear-gradient(bottom, #D84279 30%, #F26F9F 72%);
+
+    background-image: -webkit-gradient(
+    	linear,
+    	left bottom,
+    	left top,
+    	color-stop(0.3, #D84279),
+    	color-stop(0.72, #F26F9F)
+    );
+    
+    line-height: 48px;
+    padding-top: 52px;
+    height: 148px;
+  }
+  
+  .front-page-links .contracts {
+    background-image: linear-gradient(bottom, #357FB5 0%, #4EA7E6 100%);
+    background-image: -o-linear-gradient(bottom, #357FB5 0%, #4EA7E6 100%);
+    background-image: -moz-linear-gradient(bottom, #357FB5 0%, #4EA7E6 100%);
+    background-image: -webkit-linear-gradient(bottom, #357FB5 0%, #4EA7E6 100%);
+    background-image: -ms-linear-gradient(bottom, #357FB5 0%, #4EA7E6 100%);
+
+    background-image: -webkit-gradient(
+    	linear,
+    	left bottom,
+    	left top,
+    	color-stop(0, #357FB5),
+    	color-stop(1, #4EA7E6)
+    );
+    background-image: url(contracts-background.jpg);
+    text-shadow: #000 0 0 8px;
+  }
+
+  .front-page-links .clients {
+    background-color: #9bc347;
+    background-image: linear-gradient(bottom, #84A82F 0%, #CBF570 100%);
+    background-image: -o-linear-gradient(bottom, #84A82F 0%, #CBF570 100%);
+    background-image: -moz-linear-gradient(bottom, #84A82F 0%, #CBF570 100%);
+    background-image: -webkit-linear-gradient(bottom, #84A82F 0%, #CBF570 100%);
+    background-image: -ms-linear-gradient(bottom, #84A82F 0%, #CBF570 100%);
+
+    background-image: -webkit-gradient(
+    	linear,
+    	left bottom,
+    	left top,
+    	color-stop(0, #84A82F),
+    	color-stop(1, #CBF570)
+    );
+    background-image: url(clients-background.jpg);
+  }
+  
+  .front-page-links .touroperators {
+    background-color: #fbc338;
+    font-size: 28px;
+    
+    background-image: linear-gradient(bottom, #D4A52F 0%, #FFDD8F 100%);
+    background-image: -o-linear-gradient(bottom, #D4A52F 0%, #FFDD8F 100%);
+    background-image: -moz-linear-gradient(bottom, #D4A52F 0%, #FFDD8F 100%);
+    background-image: -webkit-linear-gradient(bottom, #D4A52F 0%, #FFDD8F 100%);
+    background-image: -ms-linear-gradient(bottom, #D4A52F 0%, #FFDD8F 100%);
+
+    background-image: -webkit-gradient(
+    	linear,
+    	left bottom,
+    	left top,
+    	color-stop(0, #D4A52F),
+    	color-stop(1, #FFDD8F)
+    );
+    background-image: url(to-background.jpg);
+  }
+
+  .front-page-links .preliminary {
+    background-color: #999;
+    font-size: 24px;
+  }
+  
+  .front-page-links .search {
+    background-color: #999;
+    background-image: url(search-background.jpg);
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .front-page-links .mistakes {
+    background-color: #999;
+    background-image: url(background-mistakes.jpg);
+    color: #EE0;
+    text-shadow: #000 0 0 15px;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .front-page-links .regulations {
+    background-color: #999;
+    background-image: url(background-regulations.jpg);
+    color: #FF0;
+    text-shadow: #000 0 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .front #page-title {
+    display: none;
+  }

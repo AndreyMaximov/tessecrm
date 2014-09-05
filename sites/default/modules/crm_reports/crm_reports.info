@@ -1,0 +1,5 @@
+name = CRM Reports
+description = Формирование отчетной документации
+package = CRM
+core = 7.x
+version = "7.x-1.x-dev"

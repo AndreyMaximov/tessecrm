@@ -1,0 +1,132 @@
+<?php
+/**
+ * @file
+ * Field encrypt - Extension of the Field API to allow encryption of certain text fields - install
+ */
+
+/**
+ * Implements hook_enable().
+ *
+ * Set up the cache system to use my modified
+ * class which encrypts the cached fields. But
+ * do it after
+ */
+function field_encrypt_enable() {
+  // clear the cache of existing data
+  cache_clear_all('*', 'cache_field', TRUE);
+  // now set up the new class for this bin.
+  $old_cache = variable_get('cache_class_cache_field', NULL);
+  variable_set('field_encrypt_old_cache', $old_cache);
+  variable_set('cache_class_cache_field', 'FieldEncryptDatabaseCache');
+}
+
+/**
+ * Implements hook_disable().
+ *
+ * Restore the cache system to what it was
+ */
+function field_encrypt_disable() {
+  // clear the cache of existing data
+  cache_clear_all('*', 'cache_field', TRUE);
+
+  // set the old class for this bin, if there was one.
+  $old_cache = variable_get('field_encrypt_old_cache', NULL);
+  if ($old_cache === NULL) {
+    variable_del('cache_class_cache_field');
+  }
+  else {
+    variable_set('cache_class_cache_field', $old_cache);
+  }
+}
+
+/**
+ * Implements hook_requirements().
+ */
+function field_encrypt_requirements($phase) {
+  $requirements = array();
+  // Ensure translations don't break at install time
+  $t = get_t();
+
+  switch ($phase) {
+    case 'install':
+    case 'update':
+      $requirements['encryption'] = array(
+        'title' => $t('Encryption library'),
+      );
+
+      $encrypt_ok = extension_loaded('mcrypt');
+      if (!$encrypt_ok) {
+        $message = $t('Your version of PHP does not have the mcrypt extension, this module requires that library to function.');
+      }
+
+      if (!$encrypt_ok) {
+        $requirements['encryption']['value']       = $t('unavailable');
+        $requirements['encryption']['severity']    = REQUIREMENT_ERROR;
+        $requirements['encryption']['description'] = $message;
+      }
+      else {
+        $requirements['encryption']['value'] = $t('installed');
+      }
+      break;
+  }
+
+  return $requirements;
+}
+
+/**
+ * Update database schema to re-used existing field tables.
+ */
+function field_encrypt_update_7000() {
+  // Column spec for encrypted data.
+  $spec = array(
+    'type'        => 'text',
+    'size'        => 'medium',
+    'description' => 'The encrypted value for this entity field column.',
+  );
+
+  // Get all the current entries.
+  $results = db_select('field_encrypt', 'fe')->fields('fe')->execute()
+    ->fetchAll();
+
+  // Drop the old database table.
+  db_drop_table('field_encrypt');
+
+  if (count($results) > 0) {
+    module_load_include('inc', 'field_encrypt');
+
+    $fields = array();
+    foreach ($results as $result) {
+      if (!isset($fields[$result->field_name])) {
+        $fields[$result->field_name] = field_info_field($result->field_name);
+      }
+      $field_info = $fields[$result->field_name];
+
+      $data  = unserialize(field_encrypt_decrypt($result->value));
+      $table = key($field_info['storage']['details']['sql'][FIELD_LOAD_CURRENT]);
+      foreach ($field_info['storage']['details']['sql'][FIELD_LOAD_CURRENT][$table] as $column => $field) {
+        if (isset($result->{$column}) && isset($data[$field])) {
+          $result->{$column} = $data[$field];
+        }
+      }
+
+      foreach (array(FIELD_LOAD_CURRENT, FIELD_LOAD_REVISION) as $key) {
+        $table = key($field_info['storage']['details']['sql'][$key]);
+
+        // Alter field columns to allow for encrypted data.
+        foreach ($field_info['storage']['details']['sql'][$key][$table] as $column => $field) {
+          if (!isset($field_info['indexes'][$column])) {
+            db_change_field($table, $field, $field, $spec);
+          }
+        }
+
+        // Encrypt and re-insert the data.
+        foreach ($field_info['storage']['details']['sql'][$key][$table] as $column => $field) {
+          if (!isset($field_info['indexes'][$column])) {
+            $result->{$field} = field_encrypt_encrypt($result->{$field});
+          }
+        }
+        drupal_write_record($table, $result);
+      }
+    }
+  }
+}

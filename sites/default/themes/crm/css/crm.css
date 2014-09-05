@@ -1,0 +1,142 @@
+
+.node-contract-form .form-item-title input {
+  width:200px;
+}
+
+.node-contract-form .field-name-field-country input,
+.node-contract-form .field-name-field-tour-operator input,
+.node-contract-form .field-name-field-contragent input {
+  width:200px;
+}
+
+.container-inline-date input{
+  width:120px !important;
+}
+
+.container-inline-date .form-item {
+  margin-bottom: 0 !important;
+}
+
+
+.date-padding .description {
+  display:none;
+}
+
+.view-id-clients .attachment-before .views-summary-unformatted {
+  display: inline;
+}
+
+td.views-field-field-price, td.views-field-field-client-price, td.views-field-expression {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.views-field-contextual-links {
+  position:relative;
+}
+
+.contextual-links-active .contextual-links-wrapper {
+  z-index:2000;
+}
+
+.node-type-tourist .action-links li {
+  padding: 10px 15px;
+  background-color: #D84278;
+  border-radius: 10px;
+}
+
+  .node-type-tourist .action-links li a{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  
+.form-type-managed-file .description {
+  display: none;
+}
+
+.field-type-taxonomy-term-reference .field-label,
+.field-type-taxonomy-term-reference ul.links {
+  font-size: 1em;
+}
+
+ul.links, div.field-type-taxonomy-term-reference {
+  font-family: inherit;
+}
+
+.field h3.field-label {
+  font-weight: bold;
+}
+
+.node-type-contract .content .node-full {
+  font-size: 130%;
+}
+
+form .field-type-text-long label {
+  width: auto;
+}
+
+
+/* Contract form */
+.node-contract-form .ds-3col-stacked-equal .group-left {width: 28%;}
+.node-contract-form .ds-3col-stacked-equal .group-middle {width: 29%;}
+.node-contract-form .ds-3col-stacked-equal .group-right {width: 43%;}
+
+/* Tourist form */
+.node-tourist-form .ds-2col-stacked .group-left .form-wrapper {padding-right: 30px;}
+
+.field-widget-phone-textfield input.form-text {
+  width: 130px;
+}
+
+form .field-multiple-table th.field-label {padding-left: 9px;}
+
+.tabledrag-toggle-weight-wrapper {display: none;}
+/*.admin-menu .tabledrag-toggle-weight-wrapper {display: block;}*/
+
+.field-widget-date-text .date-date input {
+  background-image: url(calendar_icon.png);
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+} 
+
+table tr:hover td {
+  background-color: #CCC;
+}
+
+
+
+/* Ошибки */
+
+.view-mistakes .field-name-author,
+.view-mistakes .field-name-post-date  {
+  font-family: Tahoma;
+  font-size: 10px;
+  float: left;
+  color: #866;
+  text-transform: uppercase;
+  background-color: #0071B3;
+  color: #fff;
+  border: 1px solid #0071B3;
+  padding: 3px 8px;
+  line-height: 10px;
+  border-radius: 9px;
+  border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.view-mistakes .field-name-post-date {
+  padding-left: 1em;
+  background-color: #0091e3;
+  border: 1px solid #0091e3;
+  border-radius: 9px;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.view-mistakes .field-name-body {
+  clear: both;
+  padding-top: 1em;
+}

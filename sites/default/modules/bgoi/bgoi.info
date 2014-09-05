@@ -1,0 +1,10 @@
+name = BGOperator Integration
+description = Интеграция с Библио-Глобусом
+package = Travel Intergations
+core = 7.x
+version = "7.x-1.x-dev"
+
+dependencies[] = encrypt
+
+files[] = handlers/views_handler_bgoi_field.inc
+

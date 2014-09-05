@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ta_vocabularies feature.
+ */
+
+include_once 'ta_vocabularies.features.inc';

@@ -1,0 +1,444 @@
+<?php
+
+include_once(drupal_get_path('module', 'contract_print') . '/num2str.inc');
+
+function contract_print_menu() {
+  $items = array();
+
+  $items['node/%node/contract'] = array(
+    'title' => 'Печать договора',
+    'page callback' => 'contract_print_compile_contract',
+    'page arguments' => array(1),
+    'access callback' => 'contract_print_compile_contract_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+  );
+  $items['node/%node/cash_order'] = array(
+    'title' => 'Сформировать кассовый ордер',
+    'page callback' => 'contract_print_compile_cash_order',
+    'page arguments' => array(1),
+    'access callback' => 'contract_print_compile_cash_order_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+  );
+  $items['node/%node/note'] = array(
+    'title' => 'Расписка',
+    'page callback' => 'contract_print_compile_note',
+    'page arguments' => array(1),
+    'access callback' => 'contract_print_compile_note_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  return $items;
+}
+
+function contract_print_compile_contract_access($node) {
+  return user_access('compile printable contract') && $node->type == 'contract';
+}
+
+function contract_print_compile_cash_order_access($node) {
+  return user_access('compile cash order') && $node->type == 'contract';
+}
+
+function contract_print_compile_note_access($node) {
+  return user_access('compile note') && $node->type == 'contract';
+}
+
+function contract_print_permission() {
+  $perms = array(
+    'compile printable contract' => array(
+      'title' => 'Формировать печатную версию договора',
+    ),
+    'compile cash order' => array(
+      'title' => 'Формировать кассовый ордер',
+    ),
+    'compile note' => array(
+      'title' => 'Формировать расписку',
+    ),
+  );
+
+  return $perms;
+}
+
+function contract_print_theme() {
+  return array(
+    'contract_print_version' => array(
+      'template' => 'contract',
+    ),
+    'contract_print_version_2' => array(
+      'template' => 'contract.v2',
+    ),
+    'cash_order' => array(
+      'template' => 'cash_order',
+    ),
+  );
+}
+
+function contract_print_preprocess_contract_print_version(&$variables) {
+  $node = &$variables['node'];
+  
+  list($year, $month, $day) = explode('-', reset(explode(' ', $node->field_date[LANGUAGE_NONE][0]['value'])));
+  $date = mktime(0, 0, 0, $month, $day, $year);
+  $node->field_date[LANGUAGE_NONE][0]['formatted'] = format_date($date);
+  
+  if (!empty($node->field_contragent[LANGUAGE_NONE][0]['nid'])) {
+    $variables['client'] = node_load($node->field_contragent[LANGUAGE_NONE][0]['nid']);
+    $passport_date = &$variables['client']->field_passport_date[LANGUAGE_NONE][0];
+    list($year, $month, $day) = explode('-', reset(explode(' ', $passport_date['value'])));
+    $passport_date['formatted'] = $day . '.' . $month . '.' . $year;
+    
+    $variables['client']->shortTitle = explode(' ', $variables['client']->title);
+    $st = &$variables['client']->shortTitle;
+    $st[1] = mb_substr($st[1], 0, 1);
+    $st[2] = mb_substr($st[2], 0, 1);
+    $st = $st[0] . ' ' . $st[1] . '.' . $st[2] . '.';
+  }
+  if (!empty($node->field_tourist[LANGUAGE_NONE])) {
+    foreach ($node->field_tourist[LANGUAGE_NONE] as $key => $value) {
+      $node->field_tourist[LANGUAGE_NONE][$key]['node'] = node_load($value['nid']);
+    }
+  }
+  if (!empty($node->field_tour_operator[LANGUAGE_NONE][0]['tid'])) {
+    $variables['touroperator'] = taxonomy_term_load($node->field_tour_operator[LANGUAGE_NONE][0]['tid'], TRUE);
+    $to_ins_contract_date = &$variables['touroperator']->field_ins_contract_date[LANGUAGE_NONE][0];
+    list($year, $month, $day) = explode('-', reset(explode(' ', $to_ins_contract_date['value'])));
+    $to_ins_contract_date['formatted'] = $day . '.' . $month . '.' . $year;
+  }  
+  
+}
+
+function contract_print_preprocess_contract_print_version_2(&$variables) {
+  contract_print_preprocess_contract_print_version($variables);
+}
+
+function contract_print_preprocess_cash_order(&$variables) {
+  $node = &$variables['node'];
+  
+  list($year, $month, $day) = explode('-', reset(explode(' ', $node->field_date[LANGUAGE_NONE][0]['value'])));
+  $date = mktime(0, 0, 0, $month, $day, $year);
+  $node->field_date[LANGUAGE_NONE][0]['formatted'] = format_date($date);
+  
+  if (!empty($node->field_contragent[LANGUAGE_NONE][0]['nid'])) {
+    $variables['client'] = node_load($node->field_contragent[LANGUAGE_NONE][0]['nid']);
+    $passport_date = &$variables['client']->field_passport_date[LANGUAGE_NONE][0];
+    list($year, $month, $day) = explode('-', reset(explode(' ', $passport_date['value'])));
+    $passport_date['formatted'] = $day . '.' . $month . '.' . $year;
+  }
+  
+}
+
+/**
+ * Вспомогательная функция, составляющая список всех файлов в структуре
+ * директорий
+ *
+ * @param $dir
+ * @param $list
+ * @param null $prefix
+ * @return mixed
+ */
+function _contract_print_scan_dir($dir, &$list, $prefix = NULL) {
+  $hDir = opendir($dir);
+
+  while ($filename = readdir($hDir)) {
+    if ($filename != '.' && $filename != '..') {
+      $record = new stdClass();
+      $record->name = $filename;
+      $record->path = "{$dir}/{$filename}";
+      $record->short = isset($prefix) ? "{$prefix}/{$filename}" : $filename;
+      $record->type = 'file';
+      if (is_dir($record->path)) {
+        $list[$record->short] = $record;
+        _contract_print_scan_dir("{$dir}/{$filename}", $list, $record->short);
+        $record->type = 'dir';
+      }
+      else {
+        $list[$record->short] = $record;
+      }
+    }
+  }
+
+  return $list;
+}
+
+function _contract_print_version_3($node, $version = 3) {
+  //Creating a document
+  //Environment path (current module)
+  $env_path = drupal_get_path('module', 'contract_print');
+
+  $template = new ZipArchive();
+  $template->open($env_path . '/contract.v3.docx');
+  $tempdir = tempnam(sys_get_temp_dir(), drupal_substr(md5(time()), 0, 4));
+
+  //Delete the file and create dir instead
+  unlink($tempdir);
+  mkdir($tempdir);
+
+  //Extract our zip into it
+  $template->extractTo($tempdir);
+  $template->close();
+
+
+  $zipfilename = 'sites/default/files/contract_' . date("d_m_y_h_i", time()) . '.docx';
+
+  $zip = new ZipArchive();
+  $zip->open($_SERVER['DOCUMENT_ROOT'] . '/' . $zipfilename, ZIPARCHIVE::CREATE);
+
+  $list = array();
+  _contract_print_scan_dir($tempdir, $list);
+
+  //This file wont be added to the archive yet
+  $toskip = array(
+    'word/document.xml',
+    'word/header2.xml'
+  );
+  foreach ($toskip as $file) {
+    $list[$file]->skip = TRUE;
+  }
+
+  // Fullfill archive structure with files.
+  foreach ($list as $file) {
+    if (empty($file->skip)) {
+      if ($file->type == 'dir') {
+        $zip->addEmptyDir($file->short);
+      }
+      elseif ($file->type == 'file') {
+        $zip->addFile($file->path, $file->short);
+      }
+    }
+  }
+  
+  // Дата заключения договора
+  list($year, $month, $day) = explode('-', reset(explode(' ', $node->field_date[LANGUAGE_NONE][0]['value'])));
+  $date = mktime(0, 0, 0, $month, $day, $year);
+  // Клиент
+  $client = node_load($node->field_contragent[LANGUAGE_NONE][0]['nid']);
+  // Дата выдачи паспорта клиента
+  list($year, $month, $day) = explode('-', reset(explode(' ', $client->field_passport_date[LANGUAGE_NONE][0]['value'])));
+  $passport_date_formatted = $day . '.' . $month . '.' . $year;
+  // Краткое имя клиента
+  $st = explode(' ', $client->title);
+  $st[1] = mb_substr($st[1], 0, 1);
+  $st[2] = mb_substr($st[2], 0, 1);
+  $st = $st[0] . ' ' . $st[1] . '.' . $st[2] . '.';
+  // Туроператор
+  $touroperator = taxonomy_term_load($node->field_tour_operator[LANGUAGE_NONE][0]['tid'], TRUE);
+  // Клиенты
+  foreach ($node->field_tourist[LANGUAGE_NONE] as $key => $tourist) {
+    $t_node = node_load($tourist['nid']);
+    $tourists[] = '<w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+      <w:r w:rsidRPr="0088204A">
+        <w:t>' . ($key + 1) . ') ' . $t_node->title . '</w:t>
+      </w:r>
+    </w:p>';
+  }
+  
+  $replacements = array(
+    '{{title}}' => $node->title,
+    '{{field_data_formatted}}' => format_date($date),
+    '{{client_title}}' => $client->title,
+    '{{client_field_passport_date}}' => $passport_date_formatted,
+    '{{tourists}}' => implode('', $tourists),
+    '{{client_short_title}}' => $st,
+    '{{touroperator_field_fullname}}' => $touroperator->field_fullname[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_shortname}}' => $touroperator->field_shortname[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_fact_address}}' => $touroperator->field_fact_address[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_phone}}' => $touroperator->field_phone[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_site}}' => $touroperator->field_site[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_financial_security}}' => $touroperator->field_financial_security[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_financial_guaranty_contr}}' => $touroperator->field_financial_guaranty_contr[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_financial_guaranteer_name}}' => $touroperator->field_financial_guaranteer_name[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_financial_guaranteer_addr}}' => $touroperator->field_financial_guaranteer_addr[LANGUAGE_NONE][0]['value'],
+    '{{touroperator_field_financial_guaranteer_padd}}' => $touroperator->field_financial_guaranteer_padd[LANGUAGE_NONE][0]['value'],
+  );
+  
+  $fields = array(
+    '{{client_field_passport_serie}}' => 'field_passport_serie',
+    '{{client_field_passport_number}}' => 'field_passport_number',
+    '{{cliend_field_passport_emitter}}' => 'field_passport_emitter',
+    '{{client_field_address}}' => 'field_address',
+    '{{client_field_phone}}' => 'field_phone',
+    '{{client_field_email}}' => 'field_email',
+  );
+  $client_view = node_view($client);
+  foreach ($fields as $key => $field_name) {
+    $_access = !empty($client_view[$field_name]['#access']) && $client_view[$field_name]['#access'] && !empty($client->{$field_name});
+    $replacements[$key] = $_access ? $client_view[$field_name][0]['#markup'] : '';
+  }
+
+  // Add skipped files.
+  foreach ($toskip as $file) {
+    $source_document = file_get_contents($env_path . '/contract.v' . $version . '/' . $file);
+    $replaced_document = $source_document;
+    $replaced_document = str_replace(array_keys($replacements), array_values($replacements), $source_document);
+    $suc = $zip->addFromString($file, $replaced_document);
+  }
+  if (!$zip->close()) {
+    watchdog('contract_print', 'Failed closing archive %s', array('%s' => $zipfilename));
+  }
+  
+  return $zipfilename;
+}
+
+function contract_print_compile_contract($node) {
+  // Определение требуемой версии договора по дате составления
+  $node_wrapper = entity_metadata_wrapper('node', $node->nid);
+  $sign_timestamp = $node_wrapper->field_date->value();
+
+  // Новая версия договора v3 с 10 сентября 2013 года
+  if ($sign_timestamp > mktime(0, 0, 0, 9, 10, 2013)) {
+    // Версия договора v4 с 19 июля 2014 года
+    if ($sign_timestamp > mktime(0, 0, 0, 7, 18, 2014)) {
+      $filename = _contract_print_version_3($node, 4);
+    }
+    else {
+      $filename = _contract_print_version_3($node);
+    }
+    drupal_add_http_header("Content-type", "application/msword");
+    drupal_add_http_header("Content-Disposition", "attachment; filename=\"contract_" . date("d_m_y", time()) . ".docx\"");
+    print file_get_contents($filename);
+    unlink($filename);
+  }
+  // версия договора v2 с 22 ноября 2012 года
+  elseif ($sign_timestamp > mktime(0, 0, 0, 11, 21, 2012)) {
+    drupal_add_http_header("Content-type", "application/msword");
+    drupal_add_http_header("Content-Disposition", "attachment; filename=\"contract_" . date("d_m_y", time()) . ".doc\"");
+    print theme('contract_print_version_2', array('node' => $node));
+  }
+  else {
+    drupal_add_http_header("Content-type", "application/msword");
+    drupal_add_http_header("Content-Disposition", "attachment; filename=\"contract_" . date("d_m_y", time()) . ".doc\"");
+    print theme('contract_print_version', array('node' => $node));  
+  }
+  
+  exit();
+}
+
+function contract_print_compile_cash_order($node) {
+  $module_path = drupal_get_path('module', 'contract_print');
+
+  require_once($module_path . '/PHPExcel.class.inc');
+
+  // дата составления
+  list($year, $month, $day) = explode('-', reset(explode(' ', $node->field_date[LANGUAGE_NONE][0]['value'])));
+  $date = mktime(0, 0, 0, $month, $day, $year);
+  $node->field_date[LANGUAGE_NONE][0]['formatted'] = format_date($date);
+  // клиент
+  $client = node_load($node->field_contragent[LANGUAGE_NONE][0]['nid']);
+  
+  // Определение требуемой версии договора по дате составления
+  $node_wrapper = entity_metadata_wrapper('node', $node->nid);
+  $sign_timestamp = $node_wrapper->field_date->value();
+
+  // Новая версия договора v2 с 22 ноября 2012 года
+  if ($sign_timestamp > mktime(0, 0, 0, 11, 21, 2012)) {
+    $template_path = $module_path . '/cash_order_20121121.tpl.xls';
+  }
+  else {
+    $template_path = $module_path . '/cash_order.tpl.xls';
+  }
+  
+  // генерация excel-документа
+  $objPHPexcel = PHPExcel_IOFactory::load($template_path);
+
+  $objWorksheet = $objPHPexcel->getActiveSheet();
+  
+  $objWorksheet->getCell('R6')->setValue($node->title);
+  $objWorksheet->getCell('O7')->setValue($node->field_date[LANGUAGE_NONE][0]['formatted'] . ' г.');
+  $objWorksheet->getCell('O9')->setValue($client->title);
+  $objWorksheet->getCell('O10')->setValue('Оплата тура по договору №' . $node->title);
+  $objWorksheet->getCell('N11')->setValue('от ' . $node->field_date[LANGUAGE_NONE][0]['formatted'] . ' г.');
+  $objWorksheet->getCell('O13')->setValue(number_format($node->field_client_price[LANGUAGE_NONE][0]['value']));
+  $objWorksheet->getCell('N15')->setValue(num2str($node->field_client_price[LANGUAGE_NONE][0]['value'], TRUE));
+  $objWorksheet->getCell('N22')->setValue($node->field_date[LANGUAGE_NONE][0]['formatted'] . ' г.');
+
+  $objWriter = PHPExcel_IOFactory::createWriter($objPHPexcel, 'Excel5');
+  $objWriter->save($module_path . '/write.xls');
+  
+  $filename = 'Приходный ордер ';
+  $filename .= reset(explode(' ', $client->title)) . ' ';
+  $filename .= reset(explode(' ', $node->field_date[LANGUAGE_NONE][0]['value']));
+  $filename .= '.xls';
+  
+  drupal_add_http_header("Content-type", "application/excel");
+  drupal_add_http_header("Content-Disposition", "attachment; filename=\"$filename\"");
+   
+  print file_get_contents($module_path . '/write.xls');
+  
+  exit();
+
+}
+
+function contract_print_compile_note($node) {
+  // Определение требуемой версии договора по дате составления
+  $node_wrapper = entity_metadata_wrapper('node', $node->nid);
+  $sign_timestamp = $node_wrapper->field_date->value();
+
+  module_load_include('inc', 'contract_print', 'docs/note');
+
+  $filename = _contract_print_note($node);
+  drupal_add_http_header("Content-type", "application/msword");
+  drupal_add_http_header("Content-Disposition", "attachment; filename=\"note_" . date("d_m_y", time()) . ".docx\"");
+  print file_get_contents($filename);
+  unlink($filename);
+
+  exit();
+}
+
+function contract_print_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'context_admin_node_form_wrapper') {
+    if ($form['#node']->type == 'contract') {
+      // автоматический номер
+      if (empty($form['#node']->nid)) {
+        $form['title']['#default_value'] = _get_new_contract_number();
+      };
+      
+      drupal_add_js(libraries_get_path('masked_input') . '/jquery.maskedinput-1.3.js');
+      drupal_add_js('
+      jQuery(function(){
+        jQuery("#edit-field-date input").mask("99.99.9999");
+        jQuery("#edit-field-departure-date input").mask("99.99.9999");
+      });', 'inline');      
+    }
+  }
+  if ($form_id == 'contract_node_form') {
+    // автоматический номер
+    if (empty($form['#node']->nid)) {
+      $form['title']['#default_value'] = _get_new_contract_number();
+    };
+    
+    drupal_add_js(libraries_get_path('masked_input') . '/jquery.maskedinput-1.3.js');
+    drupal_add_js('
+    jQuery(function(){
+      jQuery("#edit-field-date input").mask("99.99.9999");
+      jQuery("#edit-field-departure-date input").mask("99.99.9999");
+    });', 'inline');
+  }
+  elseif ($form_id == 'tourist_node_form') {
+    drupal_add_js(libraries_get_path('masked_input') . '/jquery.maskedinput-1.3.js');
+    drupal_add_js('
+    jQuery(function(){
+      jQuery("#edit-field-birth-day input").mask("99.99.9999");
+      jQuery("#edit-field-passport-date input").mask("99.99.9999");
+    });', 'inline');
+  };
+  
+}
+
+function _get_new_contract_number() {
+  $query = db_select('node', 'n');
+  $query->addField('n', 'title', 'number');
+  $query->condition('type', 'contract');
+  $query->where("title LIKE '" . (date('y') . '-____') . "'");
+  $query->orderBy('title', 'DESC');
+  $query->range(0, 1);
+  
+  $last_number = 0;
+  if ($last_number = $query->execute()->fetchField()) {
+    $last_number = intval(end(explode('-', $last_number)));
+  }
+  
+  $new_number = sprintf("%d-%04d", date('y'), intval($last_number) + 1);
+  
+  return $new_number;
+}

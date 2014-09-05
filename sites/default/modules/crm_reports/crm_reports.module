@@ -1,0 +1,136 @@
+<?php
+
+/**
+ * @file Contains CRM Reports module hooks
+ */
+
+/**
+ * Implements hook_menu()
+ */
+function crm_reports_menu() {
+  $items['reports'] = array(
+    'title' => t('Reports'),
+    'page callback' => 'crm_reports_page_callback',
+    'page arguments' => array(),
+    'access arguments' => array('access crm reports'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission()
+ */
+function crm_reports_permission() {
+  return array(
+    'access crm reports' => array(
+      'title' => 'Access CRM Reports page',
+      'description' => 'Allows to use CRM Reports',
+    ),
+  );
+}
+
+/**
+ * Page callback.
+ */
+function crm_reports_page_callback() {
+  // Load highcharts library
+  drupal_add_js(drupal_get_path('module', 'crm_reports') . '/js/highcharts.js');
+  drupal_add_js(drupal_get_path('module', 'crm_reports') . '/js/permonth.js');
+  
+  // Extracts data
+  $options = array(
+    'type' => 'signdate',
+  );
+  if (!empty($_GET['type']) && $_GET['type'] == 'departuredate') {
+    $options['type'] = 'departuredate';
+  }
+  #dpm(_crm_reports_extract_data($options), 'data');
+  $_data = _crm_reports_extract_data($options);
+  foreach (range(2012, 2014) as $year) {
+    $year_object = (object) null;
+    $year_object->name = $year;
+    // $sum = 0;
+    foreach (range(1, 12) as $month) {
+      $year_object->data[] = $_data[$year][$month][4];
+      // $sum += $_data[$year][$month][4];
+    }
+    // $year_object->data[] = $sum;
+    $data[] = $year_object;
+  }
+  drupal_add_js(array('crm_reports' => $data), 'setting');
+  
+  // Init Highcharts with data
+  drupal_add_js('jQuery(function(){ crm_reports_show_permonth(); });', 'inline');
+  
+  $output = '<div class="dashboard">
+    <div>По месяцам: '
+      . l('по дате заключения', 'reports', array('query' => array('type' => 'signdate')))
+      . ' или ' 
+      . l('по дате вылета', 'reports', array('query' => array('type' => 'departuredate')))
+      . '.</div>
+    <div class="permonth"></div>
+  </div>';
+  
+  return $output;
+}
+
+/**
+ * Extracts data
+ */
+function _crm_reports_extract_data($options) {
+  $years = range(2012, 2014);
+  $months = range(1, 12);
+  $rows = array();
+  foreach ($years as $year) {
+    foreach ($months as $month) {
+      $period = sprintf('%04d-%02d', $year, $month);
+      $query = new EntityFieldQuery();
+      $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'contract')
+      ->propertyCondition('status', 1);
+      // $query->fieldCondition('field_manager', 'uid', 13);
+      if ($options['type'] == 'departuredate') {
+        $query->fieldCondition('field_departure_date', 'value', $period . '%', 'like');
+      }
+      else {
+        $query->fieldCondition('field_date', 'value', $period . '%', 'like');
+      }
+
+      $contracts = $query->execute();
+      
+      $brutto = $netto = $counts = 0;
+      if (!empty($contracts['node'])) {
+        $counts = count($contracts['node']);
+        foreach ($contracts['node'] as $nid => $value) {
+          $node = node_load($nid);
+          $date = strtotime($node->field_date[LANGUAGE_NONE][0]['value']);
+          if (empty($node->field_departure_date[LANGUAGE_NONE][0]['value'])) {
+            $url = url('node/' . $node->nid, array('absolute' => TRUE));
+            $link = l($url, 'node/' . $node->nid);
+            drupal_set_message('Не внесена дата вылета в договор ' . $link . '!');
+          }
+          $dep_date = strtotime($node->field_departure_date[LANGUAGE_NONE][0]['value']);
+
+          $netto += $node->field_price[LANGUAGE_NONE][0]['value'];
+          $brutto += $node->field_client_price[LANGUAGE_NONE][0]['value'];
+          $cid = $node->field_contragent[LANGUAGE_NONE][0]['nid'];
+        }
+      }
+
+      
+      $delta = $brutto - $netto;
+      $margin = 0;
+      if ($brutto) {
+        $margin = (float) sprintf('%0.1f', 100 * ($brutto - $netto) / $brutto);
+      }
+      $avgprofit = 0;
+      if ($counts) {
+        $avgprofit = (float) sprintf('%0.1f', ($brutto - $netto) / $counts);
+      }
+      $rows[$year][$month] = array($period, $counts, $netto, $brutto, $delta, $margin, $avgprofit);
+    }
+  }
+
+  return $rows;
+}

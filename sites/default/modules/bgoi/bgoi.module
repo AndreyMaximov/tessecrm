@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * Implements hook_permission().
+ */
+function bgoi_permission() {
+  return array(
+    'edit bg integration settings' => array(
+      'title' => 'edit bg integration settings',
+      'description' => 'Access BG integration settings pages',
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function bgoi_menu() {
+  $items = array();
+  $items['admin/config/system/bgoi'] = array(
+    'title' => 'bg integration',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('bgoi_admin_form'),
+    'access arguments' => array('edit bg integration settings'),
+    'file' => 'bgoi.admin.inc',
+  );
+  return $items;
+}
+
+function _variable_get_decrypted($name, $default = NULL) {
+  $e = variable_get($name, $default);
+  if ($e != $default) {
+    return decrypt($e);
+  }
+  return $default;
+}
+
+/**
+ * Implements hook_entity_load().
+ */
+function bgoi_entity_load($entities, $type) {
+  if ($bgoi_entity_bundle = variable_get('bgoi_bundle')) {
+    list($entity_type, $bundle) = explode(':', $bgoi_entity_bundle);
+    if ($entity_type == $type) {
+      $field = variable_get('bgoi_field');
+      module_load_include('inc', 'bgoi', 'bgoi.bgo');
+      $tours = bgoi_get_tours_cached();
+      foreach ($entities as $entity) {
+        list(, , $_bundle) = entity_extract_ids($entity_type, $entity);
+        if ($bundle == $_bundle) {
+          if (!empty($entity->{$field}[LANGUAGE_NONE][0]['value'])) {
+            $rid = $entity->{$field}[LANGUAGE_NONE][0]['value'];
+            if (isset($tours[$rid])) {
+              $entity->bgoi = $tours[$rid];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function bgoi_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'bgoi') . '/includes',
+  );
+}
+

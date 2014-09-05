@@ -1,0 +1,5 @@
+name = Russia Tourism Reestr Opendata integration
+description = Интеграция с реестром ТО РФ
+package = CRM
+core = 7.x
+version = "7.x-1.x-dev"

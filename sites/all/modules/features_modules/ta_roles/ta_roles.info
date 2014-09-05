@@ -1,0 +1,11 @@
+name = ta_roles
+description = Tour agency roles
+core = 7.x
+package = Tour agency
+version = 7.x-1.0-alpha1
+project = ta_roles
+dependencies[] = features
+features[features_api][] = api:1
+features[user_role][] = Менеджер
+features[user_role][] = Старший менеджер
+project path = sites/all/modules/features_modules
