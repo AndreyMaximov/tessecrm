@@ -6,4 +6,5 @@
 function rtod_uninstall() {
   variable_del('rtod_update_on_cron');
   variable_del('rtod_update_period');
+  variable_del('rtod_lastupdate');
 }

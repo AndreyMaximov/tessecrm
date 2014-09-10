@@ -68,3 +68,26 @@ function rtod_permission() {
     ),
   );
 }
+
+/**
+ * Implements hook_cron().
+ */
+function rtod_cron() {
+  // Skip if regular procedure switched off in settings form.
+  if (!variable_get('rtod_update_on_cron', 0)) return;
+
+  $period = variable_get('rtod_update_period', 86400);
+  $last_update = variable_get('rtod_lastupdate', 0);
+
+  // Do work if 90% of period last.
+  if (time() - $last_update > $period * 0.9) {
+    try {
+      $passportParser = new Drupal\rtod\PassportParser();
+      $passportParser->actualizeAll();
+      variable_set('rtod_lastupdate', time());
+    }
+    catch (Exception $e) {
+      watchdog('rtod', '%s', array('%s' => $e->getMessage()), WATCHDOG_ERROR);
+    }
+  }
+}
