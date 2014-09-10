@@ -4,6 +4,9 @@
  * @file Contains CRM Reports module hooks
  */
 
+use Drupal\rtod;
+use Drupal\rtod\structure;
+
 /**
  * Implements hook_menu()
  */
@@ -31,6 +34,15 @@ function rtod_menu() {
 }*/
 
 /**
+ * Implements hook_rtod_structure_handlers().
+ */
+function rtod_rtod_structure_handlers() {
+  $handlers = array();
+
+  return $handlers;
+}
+
+/**
  * Page callback.
  */
 function rtod_page_callback() {
@@ -38,14 +50,14 @@ function rtod_page_callback() {
   $file = file_load($actual['stored-file'])->uri;
   #return print_r($file, TRUE);
   $actual_data = _rtod_parse_file($file);
-  
+
   $efq = new EntityFieldQuery();
   $efq->entityCondition('entity_type', 'taxonomy_term');
   $efq->entityCondition('bundle', 'tour_operators');
   $results = $efq->execute();
-  
+
   $tos = entity_load('taxonomy_term', array_keys($results['taxonomy_term']));
-  
+
   foreach ($tos as $to) {
     // prepare stored data
     $code = $to->field_registration_number['und'][0]['value'];
@@ -80,7 +92,7 @@ function rtod_page_callback() {
       _rtod_compare_data($to, $oddata);
     }
   }
-  
+
   return 'asdf';
 }
 
@@ -266,7 +278,7 @@ function _rtod_parse_file($file) {
       drupal_set_message('Missed code');
     }
   }
-  
+
   return $data;
 }
 
