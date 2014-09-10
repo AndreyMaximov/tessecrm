@@ -37,7 +37,15 @@ function rtod_menu() {
  * Implements hook_rtod_structure_handlers().
  */
 function rtod_rtod_structure_handlers() {
-  $handlers = array();
+  $handlers = array(
+    'StructureHandler20140904' => array(
+      'className' => 'StructureHandler20140904',
+      'handledStructures' => array(
+        'http://opendata.russiatourism.ru/7708550300-ReestrRosturizm77B/structure-20140904.json',
+        'http://opendata.russiatourism.ru/7708550300-ReestrRosturizm77B#structure-20140904',
+      ),
+    ),
+  );
 
   return $handlers;
 }
