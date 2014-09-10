@@ -23,3 +23,48 @@ function rtod_rtod_structure_handlers() {
 
   return $handlers;
 }
+
+/**
+ * Implements hook_menu()
+ */
+function rtod_menu() {
+  $items['admin/config/system/rtod'] = array(
+    'title' => 'Russia Tourizm integration',
+    'description' => 'Russia Tourizm integration related settings',
+    'page callback' => 'rtod_admin_info_page',
+    'access arguments' => array('administer rtod integration'),
+    'file' => 'rtod.admin.inc',
+  );
+  $items['admin/config/system/rtod/info'] = array(
+    'title' => t('Info'),
+    'description' => 'Russia Tourizm integration info',
+    'access arguments' => array('administer rtod integration'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'file' => 'rtod.admin.inc',
+    'weight' => 1,
+  );
+  $items['admin/config/system/rtod/settings'] = array(
+    'title' => 'Settings',
+    'description' => 'Russia Tourizm integration configuration',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('rtod_settings_form'),
+    'access arguments' => array('administer rtod integration'),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'rtod.admin.inc',
+    'weight' => 2,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_permission()
+ */
+function rtod_permission() {
+  return array(
+    'administer rtod integration' => array(
+      'title' => 'Administer RTOD ingration',
+      'description' => 'Allows to configurate RTOD integration process',
+    ),
+  );
+}
