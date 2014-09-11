@@ -287,8 +287,13 @@ function contract_print_compile_contract($node) {
 
   // Новая версия договора v3 с 10 сентября 2013 года
   if ($sign_timestamp > mktime(0, 0, 0, 9, 10, 2013)) {
+    // Версия договора v5 с 10 сентября 2014 года
+    if ($sign_timestamp > mktime(0, 0, 0, 9, 10, 2014)) {
+      module_load_include('inc', 'contract_print', 'contract.v5');
+      $filename = _contract_print_version_5($node);
+    }
     // Версия договора v4 с 19 июля 2014 года
-    if ($sign_timestamp > mktime(0, 0, 0, 7, 18, 2014)) {
+    elseif ($sign_timestamp > mktime(0, 0, 0, 7, 18, 2014)) {
       $filename = _contract_print_version_3($node, 4);
     }
     else {
