@@ -80,7 +80,8 @@ function rtod_cron() {
   $last_update = variable_get('rtod_lastupdate', 0);
 
   // Do work if 90% of period last.
-  if (time() - $last_update > $period * 0.9) {
+  // Do not update since 00:00 till 02:59
+  if (time() - $last_update > $period * 0.9 && date('G') > 2) {
     try {
       $passportParser = new Drupal\rtod\PassportParser();
       $passportParser->actualizeAll();

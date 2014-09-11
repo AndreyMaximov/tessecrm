@@ -81,8 +81,10 @@ abstract class StructureHandler {
     $local_fin_supplies = array();
     if ($items = field_get_items('taxonomy_term', $local, 'field_financial_supply')) {
       foreach ($items as $delta => $item) {
-        $fc_item = field_collection_item_load($item['value']);
-        $local_fin_supplies[] = $this->_finSupplyItemToInternal($fc_item, $delta);
+        if ($item['value']) {
+          $fc_item = field_collection_item_load($item['value']);
+          $local_fin_supplies[$delta] = $this->_finSupplyItemToInternal($fc_item, $delta);
+        }
       }
     }
 
@@ -162,9 +164,25 @@ abstract class StructureHandler {
 
     foreach ($diff->finsupplies as $_item) {
       if (isset($_item->delta)) {
-        $local->field_financial_supply[LANGUAGE_NONE][] = $old_finsupply[$_item->delta];
+        // Old but updated record
+        if (!empty($_item->update) && $_item->update == TRUE) {
+          if ($fci = field_collection_item_load($old_finsupply[$_item->delta]['value'])) {
+            $fci->field_fs_type[LANGUAGE_NONE][0]['value'] = $_item->type;
+            $fci->field_fs_size[LANGUAGE_NONE][0]['value'] = $_item->size;
+            $fci->field_fs_period[LANGUAGE_NONE][0]['value'] = $_item->date_from . 'T00:00:00';
+            $fci->field_fs_period[LANGUAGE_NONE][0]['value2'] = $_item->date_to . 'T00:00:00';
+            $fci->field_fs_org_fact_addr[LANGUAGE_NONE][0]['value'] = $_item->org_fact_address;
+            $fci->field_fs_org_post_addr[LANGUAGE_NONE][0]['value'] = $_item->org_post_address;
+            $fci->save(TRUE);
+            $local->field_financial_supply[LANGUAGE_NONE][] = $old_finsupply[$_item->delta];
+          }
+        }
+        else {
+          $local->field_financial_supply[LANGUAGE_NONE][] = $old_finsupply[$_item->delta];
+        }
       }
       else {
+        // Completely new record
         $new = entity_create('field_collection_item', array('field_name' => 'field_financial_supply'));
         $new->setHostEntity('taxonomy_term', $local);
         $new->archived = 0;
@@ -214,7 +232,6 @@ abstract class StructureHandler {
    */
   protected function _finSupplyItemToInternal($item, $delta) {
     $formatted = new \stdClass();
-    $formatted->delta = $delta;
     $formatted->doc_number = '';
     $formatted->type = '';
     $formatted->size = 0;
@@ -256,6 +273,9 @@ abstract class StructureHandler {
       $formatted->org_post_address = $item->field_fs_org_post_addr[LANGUAGE_NONE][0]['value'];
     }
 
+    $formatted->hash = md5(serialize($formatted));
+    $formatted->delta = $delta;
+
     return $formatted;
   }
 
@@ -292,6 +312,15 @@ abstract class StructureHandler {
 
     $merged = array_merge($copy_incoming, $copy_local);
     ksort($merged);
+
+    // If item is merged but differs - mark it to update from incoming data
+    foreach ($merged as $key => &$merged_item) {
+      if ($merged_item->hash != $copy_incoming[$key]->hash) {
+        $merged_item = $copy_incoming[$key];
+        $merged_item->delta = $copy_local[$key]->delta;
+        $merged_item->update = TRUE;
+      }
+    }
 
     return $merged;
   }

@@ -29,6 +29,7 @@ class StructureHandler20140904 extends StructureHandler {
       // TODO: other attributes
 
       // Financial supply for current period
+      $_default_type = '';
       $item->finsupplies = array();
       foreach ($_item->E12[0]->E12C as $_fs_item) {
         $finsupply = new \stdClass();
@@ -42,6 +43,22 @@ class StructureHandler20140904 extends StructureHandler {
         $finsupply->org_fact_address = $_fs_item->E12C8;
         $finsupply->org_post_address = $_fs_item->E12C9;
         $item->finsupplies[] = $finsupply;
+
+        if (!$_default_type && $finsupply->type) {
+          $_default_type = $finsupply->type;
+        }
+      }
+
+      // Fill type if is omitted (issue #18)
+      foreach ($item->finsupplies as &$_finsupply) {
+        if (!$_finsupply->type && $_default_type) {
+          $_finsupply->type = $_default_type;
+        }
+      }
+
+      // Calculate hash to compare with local data
+      foreach ($item->finsupplies as &$_finsupply) {
+        $_finsupply->hash = md5(serialize($_finsupply));
       }
 
       if (empty($item->finsupplies)) {
