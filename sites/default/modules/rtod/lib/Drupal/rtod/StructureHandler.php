@@ -110,6 +110,8 @@ abstract class StructureHandler {
       $this->updateFinsupply($local, $diff);
       $this->logFinsupplyUpdates($diff);
 
+      $local->revision = TRUE;
+      $local->log = 'Updated via Opendata';
       taxonomy_term_save($local);
     }
   }
