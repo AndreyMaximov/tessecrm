@@ -89,7 +89,7 @@ $data = array(
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => '3',
+      'weight' => '2',
     ),
   ),
 );

@@ -86,7 +86,16 @@ $data = array(
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 16,
+        'weight' => '16',
+      ),
+      'diff_standard' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => '16',
       ),
     ),
     'entity_type' => 'taxonomy_term',

@@ -122,7 +122,7 @@ $data = array(
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => '5',
+      'weight' => '4',
     ),
   ),
 );

@@ -103,7 +103,7 @@ $data = array(
         'size' => '60',
       ),
       'type' => 'text_textfield',
-      'weight' => '6',
+      'weight' => '5',
     ),
   ),
 );
