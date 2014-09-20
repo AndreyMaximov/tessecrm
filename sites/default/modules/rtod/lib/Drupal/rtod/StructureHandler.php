@@ -317,10 +317,13 @@ abstract class StructureHandler {
 
     // If item is merged but differs - mark it to update from incoming data
     foreach ($merged as $key => &$merged_item) {
-      if ($merged_item->hash != $copy_incoming[$key]->hash) {
-        $merged_item = $copy_incoming[$key];
-        $merged_item->delta = $copy_local[$key]->delta;
-        $merged_item->update = TRUE;
+      // Only check items presented in incoming list.
+      if (isset($copy_incoming[$key])) {
+        if ($merged_item->hash != $copy_incoming[$key]->hash) {
+          $merged_item = $copy_incoming[$key];
+          $merged_item->delta = $copy_local[$key]->delta;
+          $merged_item->update = TRUE;
+        }
       }
     }
 
