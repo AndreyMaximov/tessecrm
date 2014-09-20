@@ -90,9 +90,17 @@ abstract class StructureHandler {
 
     // Now we sort both arrays or financial supplies objects by sign date and
     // organization name and loop thru so we can match and merge arrays.
-    // Merged array is a new state, that will be stored in DB.
-    // Diff between current state and merged array will be logged.
-    $diff->finsupplies = $this->_mergeFinSupplies($local_fin_supplies, $incoming->finsupplies);
+    // Merged array is a new state, that have to be stored in DB.
+    $_mergedFinSupplies = $this->_mergeFinSupplies($local_fin_supplies, $incoming->finsupplies);
+
+    // If there is any difference between current state and merged array
+    // store merged array as new finsupplies state.
+    foreach ($_mergedFinSupplies as $item) {
+      if (!isset($item->delta) || (isset($item->update) && $item->update)) {
+        $diff->finsupplies = $_mergedFinSupplies;
+        break;
+      }
+    }
 
     return $diff;
   }
@@ -107,9 +115,10 @@ abstract class StructureHandler {
     if ($diff = $this->compare($local, $incoming)) {
       $this->updateBase($local, $diff);
       $this->logBaseUpdates($diff);
-      $this->updateFinsupply($local, $diff);
-      $this->logFinsupplyUpdates($diff);
-
+      if (isset($diff->finsupplies)) {
+        $this->updateFinsupply($local, $diff);
+        $this->logFinsupplyUpdates($diff);
+      }
       $local->revision = TRUE;
       $local->log = 'Updated via Opendata';
       taxonomy_term_save($local);
