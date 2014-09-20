@@ -184,7 +184,6 @@ abstract class StructureHandler {
             $fci->field_fs_period[LANGUAGE_NONE][0]['value2'] = $_item->date_to . 'T00:00:00';
             $fci->field_fs_org_fact_addr[LANGUAGE_NONE][0]['value'] = $_item->org_fact_address;
             $fci->field_fs_org_post_addr[LANGUAGE_NONE][0]['value'] = $_item->org_post_address;
-            $fci->save(TRUE);
             $local->field_financial_supply[LANGUAGE_NONE][] = $old_finsupply[$_item->delta];
           }
         }
