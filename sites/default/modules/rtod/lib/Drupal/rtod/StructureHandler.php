@@ -114,10 +114,10 @@ abstract class StructureHandler {
   public function update(\stdClass &$local, \stdClass $incoming) {
     if ($diff = $this->compare($local, $incoming)) {
       $this->updateBase($local, $diff);
-      $this->logBaseUpdates($diff);
+      $this->logBaseUpdates($diff, $local);
       if (isset($diff->finsupplies)) {
         $this->updateFinsupply($local, $diff);
-        $this->logFinsupplyUpdates($diff);
+        $this->logFinsupplyUpdates($diff, $local);
       }
       $local->revision = TRUE;
       $local->log = 'Updated via Opendata';
@@ -132,33 +132,22 @@ abstract class StructureHandler {
    * @param \stdClass $incoming
    */
   public function updateBase(\stdClass &$local, \stdClass $diff) {
-    if (isset($diff->fullname)) {
-      $local->field_fullname[LANGUAGE_NONE] = array(
-        0 => array('value' => $diff->fullname['new']),
-      );
+    // property name => field name
+    $map = array(
+      'fullname' => 'field_fullname',
+      'shortname' => 'field_shortname',
+      'fact_address' => 'field_fact_address',
+      'registry_number' => 'field_registration_number',
+      'site' => 'field_site',
+    );
+    // Loop thru each property and check it set.
+    foreach ($map as $prop => $field) {
+      if (isset($diff->{$prop})) {
+        $local->{$field}[LANGUAGE_NONE] = array(
+          0 => array('value' => $diff->{$prop}['new']),
+        );
+      }
     }
-    if (isset($diff->shortname)) {
-      $local->field_shortname[LANGUAGE_NONE] = array(
-        0 => array('value' => $diff->shortname['new']),
-      );
-    }
-    if (isset($diff->fact_address)) {
-      $local->field_fact_address[LANGUAGE_NONE] = array(
-        0 => array('value' => $diff->fact_address['new']),
-      );
-    }
-    if (isset($diff->registry_number)) {
-      $local->field_registration_number[LANGUAGE_NONE] = array(
-        0 => array('value' => $diff->registry_number['new']),
-      );
-    }
-    if (isset($diff->site)) {
-      $local->field_site[LANGUAGE_NONE] = array(
-        0 => array('value' => $diff->site['new']),
-      );
-    }
-
-    // TODO: moscow phones
 
     return $diff;
   }
@@ -212,12 +201,45 @@ abstract class StructureHandler {
     return $diff;
   }
 
-  public function logBaseUpdates (\stdClass $updates) {
-    // TODO: impement logBaseUpdates
+  /**
+   * Make log entry if touroperator base information was updated.
+   *
+   * @param \stdClass $updates
+   * @param \stdClass $local
+   */
+  public function logBaseUpdates (\stdClass $updates, \stdClass $local) {
+    $_updates = clone $updates;
+    if (isset($_updates->finsupplies)) {
+      unset($_updates->finsupplies);
+    }
+
+    if (get_object_vars($_updates)) {
+      $vars = array(
+        '%to' => $local->name,
+        '!changes' => '<pre>' . print_r($_updates, TRUE) . '</pre>',
+      );
+      $uri = taxonomy_term_uri($local);
+      $link = l(t('Edit'), $uri['path']);
+      watchdog('rtod', '%to changed: !changes', $vars, WATCHDOG_NOTICE, $link);
+    }
   }
 
-  public function logFinsupplyUpdates (\stdClass $updates) {
-    // TODO: impement logFinsupplyUpdates
+  /**
+   * Make log entry if touroperator finsupply information was updated.
+   *
+   * @param \stdClass $updates
+   * @param \stdClass $local
+   */
+  public function logFinsupplyUpdates (\stdClass $updates, \stdClass $local) {
+    if (!empty($updates->finsupplies)) {
+      $vars = array(
+        '%to' => $local->name,
+        '!changes' => '<pre>' . print_r($updates->finsupplies, TRUE). '</pre>',
+      );
+      $uri = taxonomy_term_uri($local);
+      $link = l(t('Edit'), $uri['path']);
+      watchdog('rtod', '%to finsupplies changed: !changes', $vars, WATCHDOG_NOTICE, $link);
+    }
   }
 
   abstract public function matchAgainstSchema();
