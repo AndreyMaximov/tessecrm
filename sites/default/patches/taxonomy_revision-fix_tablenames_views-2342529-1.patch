@@ -1,0 +1,31 @@
+diff --git a/views/taxonomy_revision.views.inc b/views/taxonomy_revision.views.inc
+index edca212..5da31df 100644
+--- a/views/taxonomy_revision.views.inc
++++ b/views/taxonomy_revision.views.inc
+@@ -27,7 +27,7 @@ function taxonomy_revision_views_data() {
+ 
+   // For other base tables, explain how we join.
+   $data['taxonomy_term_data_revision']['table']['join'] = array(
+-    'terms' => array(
++    'taxonomy_term_data' => array(
+       'left_field' => 'revision_id',
+       'field' => 'revision_id',
+     ),
+@@ -67,7 +67,7 @@ function taxonomy_revision_views_data() {
+     ),
+     'relationship' => array(
+       'handler' => 'views_handler_relationship',
+-      'base' => 'terms',
++      'base' => 'taxonomy_term_data',
+       'base field' => 'revision_id',
+       'title' => t('Taxonomy term'),
+       'label' => t('Get the actual term from a taxonomy term revision.'),
+@@ -79,7 +79,7 @@ function taxonomy_revision_views_data() {
+     'help' => t('The tid field of the taxonomy term revisions table'),
+     'relationship' => array(
+       'handler' => 'views_handler_relationship',
+-      'base' => 'terms',
++      'base' => 'taxonomy_term_data',
+       'base field' => 'tid',
+       'title' => t('Taxonomy term'),
+       'label' => t('Get all revisions from an user.'),
