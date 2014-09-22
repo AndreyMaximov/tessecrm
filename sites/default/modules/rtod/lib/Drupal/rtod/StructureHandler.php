@@ -112,7 +112,8 @@ abstract class StructureHandler {
    * @param \stdClass $incoming
    */
   public function update(\stdClass &$local, \stdClass $incoming) {
-    if ($diff = $this->compare($local, $incoming)) {
+    $diff = $this->compare($local, $incoming);
+    if (get_object_vars($diff)) {
       $this->updateBase($local, $diff);
       $this->logBaseUpdates($diff, $local);
       if (isset($diff->finsupplies)) {
