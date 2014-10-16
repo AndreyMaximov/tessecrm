@@ -38,7 +38,11 @@ function rtod_manual_execute_form() {
  */
 function rtod_manual_execute_form_submit() {
   try {
+    // Moscow
     $passportParser = new Drupal\rtod\PassportParser();
+    $passportParser->actualizeAll();
+    // Moscow region
+    $passportParser = new Drupal\rtod\PassportParser('http://opendata.russiatourism.ru/7708550300-ReestrRosturizm50B');
     $passportParser->actualizeAll();
     variable_set('rtod_lastupdate', time());
   }

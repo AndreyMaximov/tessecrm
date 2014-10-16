@@ -17,6 +17,8 @@ function rtod_rtod_structure_handlers() {
       'handledStructures' => array(
         'http://opendata.russiatourism.ru/7708550300-ReestrRosturizm77B/structure-20140904.json',
         'http://opendata.russiatourism.ru/7708550300-ReestrRosturizm77B#structure-20140904',
+        'http://opendata.russiatourism.ru/7708550300-ReestrRosturizm50B/structure-20140904.json',
+        'http://opendata.russiatourism.ru/7708550300-ReestrRosturizm50B#structure-20140904',
       ),
     ),
   );
@@ -83,7 +85,11 @@ function rtod_cron() {
   // Do not update since 00:00 till 02:59
   if (time() - $last_update > $period * 0.9 && date('G') > 2) {
     try {
+      // Moscow
       $passportParser = new Drupal\rtod\PassportParser();
+      $passportParser->actualizeAll();
+      // Moscow region
+      $passportParser = new Drupal\rtod\PassportParser('http://opendata.russiatourism.ru/7708550300-ReestrRosturizm50B');
       $passportParser->actualizeAll();
       variable_set('rtod_lastupdate', time());
     }
