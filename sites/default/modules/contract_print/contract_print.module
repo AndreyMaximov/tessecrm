@@ -287,8 +287,13 @@ function contract_print_compile_contract($node) {
 
   // Новая версия договора v3 с 10 сентября 2013 года
   if ($sign_timestamp > mktime(0, 0, 0, 9, 10, 2013)) {
+    // Версия договора v5 с 15 октября 2014 года
+    if ($sign_timestamp > mktime(0, 0, 0, 10, 16, 2014)) {
+      module_load_include('inc', 'contract_print', 'contract.v6');
+      $filename = _contract_print_version_6($node);
+    }
     // Версия договора v5 с 10 сентября 2014 года
-    if ($sign_timestamp > mktime(0, 0, 0, 9, 10, 2014)) {
+    elseif ($sign_timestamp > mktime(0, 0, 0, 9, 10, 2014)) {
       module_load_include('inc', 'contract_print', 'contract.v5');
       $filename = _contract_print_version_5($node);
     }
@@ -300,7 +305,7 @@ function contract_print_compile_contract($node) {
       $filename = _contract_print_version_3($node);
     }
     drupal_add_http_header("Content-type", "application/msword");
-    drupal_add_http_header("Content-Disposition", "attachment; filename=\"contract_" . date("d_m_y", time()) . ".docx\"");
+    drupal_add_http_header("Content-Disposition", "attachment; filename=\"contract-" . date("d-m-y", time()) . ".docx\"");
     print file_get_contents($filename);
     unlink($filename);
   }

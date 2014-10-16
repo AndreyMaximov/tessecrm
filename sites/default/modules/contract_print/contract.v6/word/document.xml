@@ -1,0 +1,4043 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document
+        xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+        xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ДОГОВОР №{{title}}</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblBorders>
+          <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          <w:left w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          <w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          <w:right w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLook w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="4644"/>
+        <w:gridCol w:w="5778"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00AA045D">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4644" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">г. </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Москва</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5778" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{field_data_formatted}} г.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D"/>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:jc w:val="both"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Индивидуальный Предприниматель Максимова Мария Юрьевна ИНН 500603345217, зарегистрированный в соответствии с законодательством Российской Федерации в лице Индивидуального Предпринимателя Максимовой Марии Юрьевны, действующего на основании Свидетельства о регистрации ИП 309501514800010, в дальнейшем именуемый «Агентство», с одной стороны, и {{client_title}}, в дальнейшем именуемый «Клиент», с другой стороны заключили договор о нижеследующем.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>ПРЕДМЕТ ДОГОВОРА</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство обязуется по заданию Клиента оказать услуги по бронированию и оплате туристского продукта в порядке и в сроки, установленные договором, а Клиент обязуется оплатить эти услуги. Везде, где по тексту договора указан Клиент, имеются в виду также третьи лица, в интересах которых действует Клиент, сопровождающие его (сопровождаемые им) лица, в том числе несовершеннолетние. Задание Клиента и требования Клиента к туристскому продукту отражены в Листе бронирования туристского продукта (далее – «Лист бронирования»).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Туристский продукт, отвечающий указанным в Листе бронирования требованиям Клиента, формируется Туроператором, сведения о котором содержатся в приложениях к договору. Туроператор является лицом (исполнителем), обеспечивающим оказание Клиенту услуг, входящих в туристский продукт, и несет перед Клиентом ответственность за неоказание или ненадлежащее оказание Клиенту услуг, входящих в туристский продукт, независимо от того, кем должны были оказываться или оказывались эти услуги.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">В комплекс услуг, входящих в туристский продукт, могут входить: </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:ind w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>услуги по размещению;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:ind w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>услуги по перевозке, трансфер;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:ind w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>экскурсионные услуги;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:ind w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>медицинское страхование, страхование расходов, возникших вследствие отмены поездки за границу или изменения сроков пребывания за границей;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:ind w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>содействие в передаче документов для оформления визы;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:ind w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>иные услуги, указанные в Листе бронирования.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство предоставляет Клиенту достоверные сведения о составе и характеристиках услуг, входящих в туристский продукт. Услуги, входящие в туристский продукт, непосредственно оказываются Клиенту третьими лицами – Туроператором, перевозчиком, отелем или иным средством размещения, страховщиком и прочими лицами, оказывающими услуги, входящие в туристский продукт.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>ПРАВА И ОБЯЗАННОСТИ СТОРОН</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Агентство обязуется:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Оказать услуги по бронированию и оплате туристского продукта, в порядке и в сроки, установленные настоящим договором.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Предоставить Клиенту информацию:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о потребительских свойствах туристского продукта отвечающего указанным в Листе бронирования требованиям Клиента;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о правилах въезда в страну (место) временного пребывания и выезда из страны (места) временного пребывания, об основных документах, необходимых для въезда в страну (место) временного пребывания и выезда из страны (места) временного пребывания, включая сведения о необходимости наличия визы для въезда в страну и (или) выезда из страны временного пребывания;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о таможенных, пограничных, медицинских, санитарно-эпидемиологических и иных правилах (в объеме, необходимом для совершения путешествия);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об обычаях местного населения, о религиозных обрядах, о святынях, памятниках природы, истории, культуры и других объектах туристского показа, находящихся под особой охраной, состоянии окружающей природной среды (в объеме, необходимом для совершения путешествия);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о национальных и религиозных особенностях страны (места) временного пребывания</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об опасностях, с которыми Клиент может встретиться при совершении путешествия, в том числе о необходимости проходить профилактику в соответствии с международными медицинскими требованиями;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о месте нахождения, почтовых адресах и номерах контактных телефонов органов государственной власти Российской Федерации, дипломатических представительств и консульских учреждений Российской Федерации, находящихся в стране (месте) временного пребывания, в которые Клиент может обратиться в случае возникновения в стране (месте) временного пребывания чрезвычайных ситуаций или иных обстоятельств, угрожающих безопасности его жизни и здоровья, а также в случаях возникновения опасности причинения вреда имуществу Клиента;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об адресе (месте пребывания) и номере контактного телефона в стране (месте) временного пребывания руководителя группы несовершеннолетних туристов в случае, если туристский продукт включает в себя организованный выезд группы несовершеннолетних туристов без сопровождения родителей, усыновителей, опекунов или попечителей;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">о порядке и сроках предъявления Клиентом требований к организации, предоставившей Туроператору финансовое обеспечение, об указанной организации, а также об основаниях для осуществления выплат по договору страхования ответственности туроператора и по банковской гарантии. В целях исполнения указанной обязанности Агентство, помимо прочего, предоставляет Клиенту Памятку и Сведения об организации, предоставившей Туроператору финансовое обеспечение. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">Подписанием договора Клиент подтверждает свое ознакомление с указанной информацией и получение соответствующих материалов. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:rPr>
+          <w:b/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Агентство вправе:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Не приступать к исполнению договора или отказаться от исполнения договора в случае нарушения Клиентом установленного договором порядка оплаты, а также в случаях не предоставления или несвоевременного предоставления Клиентом сведений и документов, необходимых для исполнения договора или нарушения Клиентом иных обязанностей установленных настоящим договором с применением последствий, предусмотренных п. 5.5. настоящего договора или с применением ч. 2 ст. 781 ГК РФ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4" w:rsidP="00934F93">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Получить от Туроператора бонусы, скидки и иные формы материального поощрения и оставить их в своем распоряжении.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Клиент обязуется:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Произвести своевременную оплату услуг Агентства в соответствии с </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>разделом 3</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> договора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>В установленный Агентством срок, но не позднее ___ (_____________________) дней до начала поездки предоставить Агентству комплект необходимых для исполнения договора документов (в том числе заграничный паспорт, фотографии в требуемом количестве, анкетную информацию), по требованию Агентства - сообщить сведения и представить иные документы, указанные в Листе бронирования и в настоящем договоре. О конкретном комплекте необходимых документов и сроке их представления Клиент уведомляется при заключении настоящего договора в устной форме или путем включения перечня таких документов в Лист бронирования. Подписанием настоящего договора Клиент подтверждает получение соответствующих сведений.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Предоставить Агентству точную информацию о своем адресе и телефоне, необходимую Агентству для оперативной связи с Клиентом.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Заблаговременно письменно довести до сведения Агентства информацию об обстоятельствах, препятствующих совершению путешествия. Агентство информирует клиента, что к таким обстоятельствам, в том числе, но не только, относятся: </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>различного рода заболевания Клиента и связанные с ними медицинские противопоказания (в том числе применительно к разным видам передвижения, смене климатических условий, особенностям национальной кухни, применению лекарственных средств и т.п.);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">имевшие место в прошлом конфликтные ситуации с государственными органами, в том числе, запрет на въезд в определенное государство или в группу стран; </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ограничения на право выезда из РФ, наложенные Федеральной службой судебных приставов-исполнителей, или иными компетентными органами;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>иностранное гражданство Клиента, установленный визовый режим между страной выезда и страной, гражданином которой является Клиент, в случае если он не российский гражданин;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>необходимость получения Клиентом специальных разрешений или согласований от третьих лиц или компетентных органов, в том числе: получения въездной/выездной визы, согласия на выезд ребенка за границу, получения ребенком собственного загранпаспорта, разрешения на вывоз оружия, разрешения на вывоз животного, разрешения на вывоз художественных ценностей и прочих разрешений и согласований.</w:t>
+      </w:r>
+    </w:p>
+     <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>До начала поездки получить документы, необходимые для совершения путешествия. Документы передаются Клиенту согласно Правилам оказания услуг по реализации туристского продукта с использованием электронной формы связи или в офисе Агентства. Агентство сообщает Клиенту о способах и о месте получения документов в офисе Агентства при заключении договора, по телефону или с использованием электронной формы связи. Документы считаются переданными Клиенту с момента извещения Клиента о готовности документов к передаче (в том числе путем направления Клиенту информации или документов по электронной почте). Клиент обязан осмотреть полученные документы и известить Агентство без промедления об обнаруженных в документах недостатках. Ответственность за исполнение обязательств по формированию пакета документов для последующей передачи документов Клиенту согласно действующему законодательству возложена на Туроператора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Своевременно прибыть в аэропорт (на вокзал) к установленному Агентством месту встречи. Неявка (опоздание) к отправлению по любым причинам признается невозможностью оказания услуг и исполнения договора по вине Клиента. Изменение сроков поездки возможно только по предварительному письменному согласованию с Агентством.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Соблюдать правила перевозки пассажиров, ручной клади и багажа, установленные перевозчиком, а также транспортными уставами, кодексами и соответствующими подзаконными актами.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Соблюдать правила выезда из РФ и въезда в РФ, правила въезда в страну (место) временного пребывания, выезда из страны (места) временного пребывания и правила пребывания там, а также соблюдать указанные правила в странах транзитного проезда. Нести ответственность за надлежащее состояние и подлинность всех документов, в том числе паспортов и сроков их действия, доверенностей, наличие загранпаспортов у детей, наличие вклеенных фотографий детей, вписанных в паспорт родителей, также наличие всех необходимых печатей и подписей в своих документах. Подписанием настоящего договора Клиент подтверждает предоставление Агентством исчерпывающей информации относительно правил выезда, въезда и транзита и гарантирует Агентству наличие возможности беспрепятственного выезда, транзита и въезда у всех участников поездки.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Соблюдать законодательство страны (места) временного пребывания, уважать ее социальное устройство, обычаи, традиции, религиозные верования.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Соблюдать во время путешествия правила личной безопасности.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Относиться к имуществу третьих лиц с надлежащей заботливостью и осмотрительностью, соблюдать установленные третьими лицами правила пользования таким имуществом, не причинять вреда имуществу третьих лиц. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Незамедлительно информировать Туроператора, Агентство, а также представителей принимающей стороны о неоказании или ненадлежащем оказании входящих в туристский продукт услуг со стороны третьих лиц.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Ознакомить указанных в договоре и Листе бронирования участников путешествия с содержанием договора и со всей информацией, предоставленной Агентством Клиенту в том случае, если Клиент, заключил настоящий договор не только от своего имени, но также от имени или в интересах иных, указанных в договоре лиц; при этом Клиент гарантирует наличие у себя полномочий на осуществление сделки в чужих интересах. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Клиент вправе:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Получить при заключении договора информацию, предоставляемую Агентством в соответствии с п. 2.1.2. договора. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Потребовать возмещения убытков и компенсации морального вреда в случае невыполнения условий договора в порядке установленном законодательством Российской Федерации. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Получить обеспечение в соответствии с законодательством РФ экстренной помощи за счет средств компенсационного фонда объединения туроператоров в сфере выездного туризма.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ПОРЯДОК ОКАЗАНИЯ УСЛУГ.  УСЛОВИЯ ОПЛАТЫ</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Лист бронирования оформляется в письменном виде. При заключении договора Клиент вносит аванс, необходимый для начала исполнения Агентством договора, в размере ____________.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство сообщает Клиенту о возможности оказания услуг по бронированию и оплате туристского продукта, соответствующего указанным в Листе бронирования требованиям Клиента, в течение ____ рабочих дней с момента заключения договора. Соответствующую информацию Клиент получает в офисе Агентства, либо по телефону. Обязанности по бронированию и оплате туристского продукта и дальнейшему исполнению договора возникают у Агентства лишь при наличии соответствующего туристского продукта у Туроператора. В случае отсутствия соответствующего требованиям Клиента туристского продукта Агентство вправе (но не обязано) предложить Клиенту альтернативный туристский продукт или отказаться.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Полная оплата цены договора должна быть произведена Клиентом не позднее ____ рабочих дней до начала поездки. По требованию Агентства Клиент обязуется произвести оплату в иные, в том числе в более сжатые сроки.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Общая цена договора указывается в Листе бронирования и (или) в туристской путевке.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Все виды платежей по настоящему договору производятся в рублях.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Расчеты между Агентством и Клиентом производятся путем внесения Клиентом денежных средств в кассу Агентства, кассу уполномоченного банка, либо в безналичной форме.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>СРОК ДЕЙСТВИЯ ДОГОВОРА.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Настоящий договор вступает в силу с момента его подписания Агентством и Клиентом и действует до даты окончания путешествия. Обязательства Агентства считаются исполненнымии с момента выполнения Агентством обязанностей, предусмотренных предметом и условиями настоящего договора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ИЗМЕНЕНИЕ И РАСТОРЖЕНИЕ ДОГОВОРА</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Настоящий договор может быть изменен или расторгнут по соглашению сторон или по иным основаниям, предусмотренным действующим законодательством РФ или настоящим договором.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Каждая из сторон вправе потребовать изменения или расторжения договора в связи с существенным изменением обстоятельств, из которых стороны исходили при заключении договора. К существенным изменениям обстоятельств относятся:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ухудшение условий путешествия;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>изменение сроков совершения путешествия;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>непредвиденный рост транспортных тарифов;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>невозможность совершения Клиентом поездки по независящим от него обстоятельствам (болезнь Клиента, отказ в выдаче визы и другие обстоятельства).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>При изменении или расторжении договора по указанным основаниям применяются последствия, предусмотренные п. 5.4. настоящего договора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Каждая их сторон вправе потребовать в судебном порядке изменения или расторжения договора в случае возникновения обстоятельств, свидетельствующих о возникновении в стране (месте) временного пребывания Клиента угрозы безопасности его жизни и здоровью, а равно опасности причинения вреда имуществу. Наличие обстоятельств, свидетельствующих о возникновении в стране (месте) временного пребывания Клиента угрозы безопасности его жизни и здоровью, а равно опасности причинения вреда имуществу,  подтверждается соответствующими решениями федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, принимаемыми в соответствии с федеральными законами. При расторжении до начала путешествия договора в связи с наступлением обстоятельств, свидетельствующих о возникновении в стране (месте) временного пребывания Клиента угрозы безопасности его жизни и здоровью, а равно опасности причинения вреда имуществу, возврат денежных средств осуществляется в порядке, установленном законодательством РФ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В случае изменения или расторжения договора и (или) отказа Клиента от исполнения договора и (или)  отказа от услуг Агентства, а также в случаях, перечисленных в п. 7.1. договора и (или) при невозможности исполнения договора по обстоятельствам за которые ни одна из сторон не отвечает, Клиент обязан оплатить расходы, понесенные Агентством при исполнении договора. Клиент при заключении настоящего договора проинформирован о возможном (приблизительном) размере расходов в зависимости от сроков отказа от совершения поездки, а также о том, что конкретный размер расходов устанавливается в каждом конкретном случае и не может быть определен заранее. В случае отказа Клиента от исполнения договора Агентство представляет Клиенту информацию о расходах согласно информации, полученной от Туроператора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Несвоевременная или неполная оплата Клиентом денежных средств по настоящему договору, непредставление истребуемых Агентством документов, необходимых для исполнения договора, рассматриваются сторонами как невозможность исполнения договора по вине Клиента с применением последствий, предусмотренных ч. 2 ст. 781 ГК РФ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Любые изменения и дополнения к настоящему договору действительны лишь при условии, если они совершены в письменной форме и подписаны надлежаще уполномоченными на то представителями сторон. Изменения и дополнения к договору осуществляются путем подписания сторонами дополнительных соглашений и оформляются в виде приложений к договору.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ОТВЕТСТВЕННОСТЬ КЛИЕНТА, АГЕНТСТВА И ТУРОПЕРАТОРА. ПОРЯДОК ПРЕДЪЯВЛЕНИЯ ПРЕТЕНЗИЙ</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Ответственность перед Клиентом за неоказание или ненадлежащее оказание услуг, входящих в туристский продукт, отвечающий указанным в Листе бронирования на бронирование требованиям Клиента, независимо от того, кем должны были оказываться или оказывались эти услуги, несет Туроператор, сведения о котором содержатся в Приложении № 2 к настоящему договору. Туроператор несет ответственность перед Клиентом за неисполнение или ненадлежащее исполнение обязательств по договору о реализации туристского продукта, заключенному Агентством как от имени туроператора, так и от своего имени.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>При наличии каких-либо замечаний относительно качества услуг, оказываемых на протяжении путешествия и перечисленных в Листе бронирования, или замечаний относительно действий третьих лиц, непосредственно оказывающих Клиенту услуги, Агентство рекомендует Клиенту незамедлительно обратиться к Туроператору и представителям принимающей стороны на местах, по телефонам, указанным в договоре и приложениях к нему, а также в ваучере, программе пребывания и памятке.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Претензии к качеству туристского продукта предъявляются Клиентом Туроператору в письменной форме в течение 20 дней со дня окончания действия договора и подлежат рассмотрению в течение 10 дней со дня получения претензий.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Сведения о порядке и сроках предъявления Клиентом требований к организации, предоставившей Туроператору финансовое обеспечение, а также информация об основаниях для осуществления выплат по договору страхования ответственности Туроператора и по банковской гарантии, содержатся в приложении к настоящему договору.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Настоящим договором установлен обязательный досудебный порядок урегулирования споров. В случае возникновения разногласий по договору между Клиентом и Агентством стороны приложат все усилия для того, чтобы решить конфликтную ситуацию путем переговоров и в претензионном порядке.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В случае недостижения соглашения в досудебном порядке, спор разрешается в суде в соответствии с законодательством РФ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Туроператор и Агентство не несут ответственности перед Клиентом за понесенные Клиентом расходы и иные негативные последствия возникшие: </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">вследствие недостоверности, недостаточности и (или) несвоевременности предоставления Клиентом сведений и документов, необходимых для исполнения договора; </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>в случае если Клиент не сможет совершить путешествие или воспользоваться отдельными услугами по причине действий российской и зарубежной таможенных служб, российского и зарубежного пограничного контроля, либо иных действий официальных органов или властей России или зарубежных стран;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие любых действий посольств, консульств, связанных с отказом в выдаче визы, задержкой выдачи визы, иных действий;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>в случае если Клиент не сможет совершить путешествие по причине наличия на территории РФ неисполненных обязательств, в том числе обязательств оп уплате алиментов, неисполненных решений суда;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие отмены или изменения времени отправления авиарейсов и поездов;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие ограничения права Клиента на выезд из РФ компетентными органами;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие утери, утраты, кражи личного багажа, ценностей и документов Клиента в период поездки;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие несоответствия услуг ожиданиям Клиента;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие приобретения Клиентом услуг, не входящих в изначально забронированный туристский продукт;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>вследствие перерасчета цены туристского продукта Туроператором, связанного с непредвиденным ростом транспортных тарифов (введения топливных сборов) и (или) при введении новых или повышении действующих налогов и сборов и (или) при резком изменении курса национальных валют, в том числе при наступлении указанных обстоятельств после полной оплаты Клиентом договора. Агентство действует за счет Туроператора и не имеет полномочий и прав на изменение цены туристского продукта; в случае требований о доплате со стороны Туроператора Клиент вправе согласиться с изменением цены или направить претензию/требования о разъяснениях в адрес Туроператора;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+          <w:pStyle w:val="ListParagraph3"/>
+          <w:numPr>
+              <w:ilvl w:val="3"/>
+              <w:numId w:val="9"/>
+          </w:numPr>
+          <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+          <w:t>в случае отсутствия надлежащих и (или) ненадлежащим образом оформленных документов (в том числе, но не ограничиваясь перечисленным: заграничных паспортов с достаточным сроком действия, разрешений, согласований (согласия на выезд несовершеннолетнего клиента, разрешительных отметок, печатей, штампов, страниц в паспорте и других согласований)), виз или нарушение правил поведения в общественных местах, решением властей или ответственных лиц Клиенту отказано в возможности выезда из страны или въезда в страну, либо в возможности полета по авиабилету или в проживании в забронированной гостинице;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">в случае, если в вследствие отсутствия надлежащих документов или нарушения правил поведения в общественных местах, решением властей или ответственных лиц Клиенту отказано в возможности выезда из страны или въезда в страну, либо в возможности полета по авиабилету или в проживании в забронированной гостинице. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>За убытки, причиненные Клиенту вследствие отмены или изменения времени отправления авиарейсов, поездов, судов, и иных транспортных средств, ответственность несёт перевозчик и (или) Туроператор.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">В случае если действия Клиента нанесли ущерб Агентству и третьим лицам, с Клиента взыскиваются убытки в размерах и в порядке, предусмотренных действующим законодательством РФ. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Клиент проинформирован о перечне необходимых документов и несет ответственность за наличие у него и иных участников поездки документов, необходимых для совершения поездки (в том числе действительного заграничного и общегражданского паспорта с достаточным сроком действия) разрешительных отметок в документах, наличие необходимых для въезда виз и отсутствие непогашенных виз, препятствующих въезду в страну или страны, отсутствие неисполненных обязательств на территории РФ; Клиент обязан иметь и обеспечить наличие у иных участников путешествия на момент начала поездки соответствующих документов, позволяющих беспрепятственно пересечь границу и въехать в страну временного пребывания.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство и Туроператор не несут ответственность за несоответствие представленного туристического обслуживания субъективным ожиданиям и оценкам Клиента.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство не несет ответственность за невыполнение Туроператором своих обязательств, в том числе – в связи с неоказанием Туроператором всех или части услуг, входящих в туристский продукт, в связи с прекращением или приостановлением Туроператором своей деятельности. В этом случае ответственность несет Туроператор, сведения о котором указаны в Приложении № 2 к настоящему договоре.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство не несет ответственность за исключение Туроператора из Единого федерального реестра туроператоров после заключения настоящего договора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Возврат оплаченных Клиентом денежных средств в предусмотреных законом случаях осуществляется по поручению и за счет Туроператора. Агентство не несет обязанности по возврату денежных средств за свой собственный счет.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ОБСТОЯТЕЛЬСТВА НЕПРЕОДОЛИМОЙ СИЛЫ</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство  освобождается от ответственности за частичное или полное неисполнение обязательств по настоящему договору, если такое неисполнение произошло вследствие действия обстоятельств непреодолимой силы, в том числе землетрясений, наводнений, цунами, пожара, тайфуна, снежного заноса, военных действий, массовых заболеваний, забастовок, ограничений перевозок, запрета торговых операций с определенными странами, террористических актов и других обстоятельств, не зависящих от Агентства. В случае наступления обстоятельств непреодолимой силы каждая из сторон вправе отказаться от исполнения договора с применением последствий п. 5.4. настоящего договора, если иное не установлено действующим законодательством РФ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+      </w:pPr>
+      <w:r>
+        <w:t>ПРОЧИЕ УСЛОВИЯ ДОГОВОРА</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Настоящий договор составлен в 2 (двух) экземплярах на русском языке, имеющих одинаковую юридическую силу.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Все приложения и дополнения к настоящему договору являются его неотъемлемой частью.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>В случае заключения договора с использованием электронной почты, договор считается заключенным с момента направления договора на адрес, указанный Клиентом или (в зависимости от того, какое событие наступит ранее) с момента совершения Клиентом любого действия по исполнению договора – полной или частичной оплаты, предоставления Клиентом документов или иных действий.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Перед подписанием договора Клиент ознакомился с информацией, предоставленной Агентством в соответствии с п. 2.1.2 настоящего договора, а также с информацией:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о требованиях, предъявляемых посольством (консульством) страны временного пребывания к оформлению визы и сроку действия заграничных паспортов, порядке и сроках оформления виз консульствами иностранных государств;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о необходимости согласия на выезд несовершеннолетнего клиента, о требованиях, предъявляемых к документам граждан России, Украины, Белоруссии, Узбекистана и иных стран;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о расписании рейсов и поездов перевозчиков, времени и месте сбора группы; </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о том, что Агентство не отвечает за возможные неточности, допущенные в гостиничных и других рекламных проспектах, которые изготовлены без его участия;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о том, что субъективная оценка Клиентом услуг не является критерием их качества;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об условиях договора перевозки, об условиях возврата и обмена билетов;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об условности классификации средств размещения и особенностях средств размещения в стране временного пребывания;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о расчетном часе заселения в отель и выселения из отеля;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о требованиях, предъявляемых уполномоченными органами к въездным и выездным документам, в том числе </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>о необходимости наличия у ребенка в любом возрасте собственного заграничного паспорта</w:t>
+      </w:r>
+      <w:r>
+        <w:t>;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о требованиях, предъявляемых уполномоченными органами к въездным и выездным документам, в том числе о необходимости наличия у ребенка в любом возрасте собственного заграничного паспорта; о необходимости нотариально заверенного согласия на выезд несовершеннолетнего туриста, о правилах въезда и выезда для граждан России, Украины, Белоруссии и Узбекистана;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о необходимости приобретения медицинской страховки и об условиях страхования;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об условиях договора страхования, о том, какие события являются и не являются страховыми случаями, о территории действия договора страхования;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об условиях проживания и питания в средстве размещения, о порядке предоставления экскурсий;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о правилах поведения во время туристической поездки;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о возможных трудностях, связанных с незнанием  языка общения страны пребывания;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о состоянии природной среды в месте отдыха и о специфике погодных условий;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>о санитарно-эпидемиологической обстановке в стране временного пребывания;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph3"/>
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+        <w:ind w:left="567" w:hanging="283"/>
+      </w:pPr>
+      <w:r>
+        <w:t>об опасностях, с которыми возможна встреча при совершении путешествия.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Агентство не несет ответственности за замену Туроператором услуг, входящих в туристский продукт (в том числе замену средства размещения, перевозчика, типа воздушного судна), на аналогичные услуги. Претензии к качеству туристского продукта Клиент вправе предъявить Туроператору в порядке установленном действующим законодательством РФ.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Агентство настоятельно рекомендует Клиенту застраховать расходы, которые могут возникнуть у него вследствие непредвиденной отмены поездки за границу или изменения сроков пребывания за границей («страхование от невыезда»). Данный вид страхования позволит существенно снизить степень негативных последствий при невозможности совершения Клиентом поездки по независящим от него причинам (болезнь Клиента, отказ в выдаче визы и другие обстоятельства).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Адреса и паспортные данные Клиента и участников поездки указаны в договоре и приложениях к нему.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>РЕКВИЗИТЫ И ПОДПИСИ СТОРОН</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="5000" w:type="pct"/>
+        <w:tblInd w:w="144" w:type="dxa"/>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="4856"/>
+        <w:gridCol w:w="5566"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00AA045D">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4856" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>АГЕНТСТВО:</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">ИП </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Максимова</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> М.Ю.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">другое название </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Tessera</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Travel</w:t>
+            </w:r>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> (Тессера Тревэл)</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Юридический адрес: </w:t>
+            </w:r>
+            <w:r w:rsidR="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>143090 Московская обл., г. Краснознаменск, ул. Победы 16-129</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="0088204A" w:rsidRDefault="0088204A">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Фактический адрес: 125047 1й Тверской-Ямской пер. 11, офис «Тессера Тревел»</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="0088204A" w:rsidRPr="0088204A" w:rsidRDefault="0088204A">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Номер в реестре ТА: </w:t>
+            </w:r>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:color w:val="222222"/>
+                <w:szCs w:val="20"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+              </w:rPr>
+              <w:t>TC100260</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>ИНН 500603345217</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Банк: </w:t>
+            </w:r>
+            <w:r w:rsidR="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>ОАО АКБ «Абсолют Банк»</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>р/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>c</w:t>
+            </w:r>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidR="0088204A" w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:szCs w:val="20"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+              </w:rPr>
+              <w:t>40802810822000042094</w:t>
+            </w:r>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">, </w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>к/</w:t>
+            </w:r>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>c</w:t>
+            </w:r>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidR="0088204A" w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:szCs w:val="20"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+              </w:rPr>
+              <w:t>30101810500000000976</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">БИК </w:t>
+            </w:r>
+            <w:r w:rsidR="0088204A" w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:szCs w:val="20"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+              </w:rPr>
+              <w:t>044525976 </w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Тел.: +7 (495) 648 52 03</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">e-mail: </w:t>
+            </w:r>
+            <w:hyperlink r:id="rId7" w:history="1">
+              <w:r>
+                <w:rPr>
+                  <w:rStyle w:val="Hyperlink"/>
+                  <w:lang w:val="en-US" w:eastAsia="en-US"/>
+                </w:rPr>
+                <w:t>maria@tesse.ru</w:t>
+              </w:r>
+            </w:hyperlink>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5566" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>КЛИЕНТ:</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>{{client_title}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Паспорт: {{client_field_passport_serie}} {{client_field_passport_number}}, {{cliend_field_passport_emitter}}, {{client_field_passport_date}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Адрес (регистрация): {{client_field_address}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Телефон: {{client_field_phone}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Адрес электронной почты: {{client_field_email}}</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>С условиями договора ознакомлен и согласен. Документы, являющиеся приложением к настоящему договору, полную информацию об условиях путешествия и оказываемых Агентством услугах, получил.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>На обработку моих персональных данных в соответствии с условиями договора согласен.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Подтверждаю наличие у меня права заключить настоящий договор также в интересах следующих лиц:</w:t>
+            </w:r>
+          </w:p>
+          {{tourists}}
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00AA045D">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="660"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4856" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:szCs w:val="20"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>__________________________/Максимова М.Ю./</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>М.П.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5566" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>_________________________________/{{client_short_title}}/</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D">
+            <w:pPr>
+              <w:rPr>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D">
+      <w:pPr>
+        <w:keepNext w:val="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:sectPr w:rsidR="00AA045D">
+          <w:headerReference w:type="default" r:id="rId8"/>
+          <w:footerReference w:type="default" r:id="rId9"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1440" w:right="560" w:bottom="1440" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+          <w:cols w:space="708"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:keepNext w:val="0"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:i/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>СВЕДЕНИЯ О ТУРОПЕРАТОРЕ:</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9648" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLook w:val="01E0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="3244"/>
+        <w:gridCol w:w="6404"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00AA045D">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Полное наименование</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{touroperator_field_fullname}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00AA045D">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Сокращенное наименование</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{touroperator_field_shortname}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00AA045D">
+        <w:trPr>
+          <w:trHeight w:val="375"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Адрес (место нахождения)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{touroperator_field_fact_address}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00AA045D">
+        <w:trPr>
+          <w:trHeight w:val="375"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t>Телефон/факс</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:softHyphen/>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:softHyphen/>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{touroperator_field_phone}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00AA045D">
+        <w:trPr>
+          <w:trHeight w:val="352"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:softHyphen/>
+              <w:t>Адрес сайта в сети Интернет</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:val="en-US" w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">{{touroperator_field_site}}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00AA045D">
+        <w:trPr>
+          <w:trHeight w:val="335"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="9648" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:gridSpan w:val="2"/>
+          </w:tcPr>
+
+          <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="0088204A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+                <w:b/>
+                <w:lang w:eastAsia="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Финансовое обеспечение:</w:t>
+            </w:r>
+          </w:p>
+
+          {{touroperator_financial_supplies}}
+
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D">
+      <w:pPr>
+        <w:ind w:left="360"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:keepNext w:val="0"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t xml:space="preserve">СВЕДЕНИЯ О ПОРЯДКЕ И СРОКАХ ПРЕДЪЯВЛЕНИЯ КЛИЕНТОМ ТРЕБОВАНИЙ К ОРГАНИЗАЦИИ, ПРЕДОСТАВИВШЕЙ ТУРОПЕРАТОРУ ФИНАНСОВОЕ ОБЕСПЕЧЕНИЕ: </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="00AA045D">
+      <w:pPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Страховщик обязан выплатить страховое возмещение по договору страхования ответственности Туроператора по письменному требованию Клиента при наступлении страхового случая. Гарант обязан уплатить денежную сумму по банковской гарантии по письменному требованию Клиента и в случае отказа Туроператора возместить реальный ущерб, возникший в результате неисполнения или ненадлежащего исполнения Туроператором обязательств по договору.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Основанием для выплаты страхового возмещения по договору страхования ответственности Туроператора либо уплаты денежной суммы по банковской гарантии является факт установления обязанности Туроператора возместить Клиенту и (или) иному заказчику реальный ущерб, возникший в результате неисполнения или ненадлежащего исполнения Туроператором обязательств по договору о реализации туристского продукта, если это является существенным нарушением условий такого договора. Существенным нарушением условий договора признается нарушение, которое влечет для Клиента такой ущерб, что он в значительной степени лишается того, на что был вправе рассчитывать при заключении договора.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>К существенным нарушениям Туроператором договора относятся: неисполнение обязательств по оказанию Клиенту входящих в туристский продукт услуг по перевозке и (или) размещению; наличие в туристском продукте существенных недостатков, включая существенные нарушения требований к качеству и безопасности туристского продукта.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Иск о возмещении реального ущерба, возникшего в результате неисполнения или ненадлежащего исполнения Туроператором обязательств по договору о реализации туристского продукта, может быть предъявлен Клиентом Туроператору либо Туроператору и страховщику (гаранту) совместно.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Выплата страхового возмещения по договору страхования ответственности Туроператора или уплата денежной суммы по банковской гарантии не лишает Клиента права требовать от Туроператора возмещения упущенной выгоды и (или) морального вреда в порядке и на условиях, которые предусмотрены законодательством Российской Федерации.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>В случаях неисполнения или ненадлежащего исполнения Туроператором обязательств по договору перед Клиентом и (или) иным заказчиком и наличия оснований для выплаты страхового возмещения по договору страхования ответственности Туроператора либо уплаты денежной суммы по банковской гарантии Клиент или его законный представитель вправе в пределах суммы финансового обеспечения предъявить письменное требование о выплате страхового возмещения или об уплате денежной суммы непосредственно организации, предоставившей финансовое обеспечение. К требованию Клиент прилагает следующие документы: копию паспорта или иного документа, удостоверяющего личность в соответствии с законодательством Российской Федерации (с предъявлением оригинала указанных документов); копию договора (с предъявлением его оригинала); документы, подтверждающие реальный ущерб, понесенный Клиентом в результате неисполнения или ненадлежащего исполнения Туроператором обязательств по договору. К требованию Клиента к гаранту прикладываются также копия документа, свидетельствующего об отказе Туроператора в добровольном порядке удовлетворить требование о возмещении реального ущерба, понесенного Клиентом в результате неисполнения или ненадлежащего исполнения Туроператором своих обязательств по договору, и (или) копия судебного решения о возмещении Туроператором реального ущерба по иску, предъявленному в соответствии с положениями статьи 17.4 ФЗ «Об основах туристской деятельности в РФ».</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Не подлежат возмещению страховщиком или гарантом расходы, произведенные Клиентом и не обусловленные требованиями к качеству туристского продукта, обычно предъявляемыми к туристскому продукту такого рода.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Для исполнения своих обязательств по финансовому обеспечению страховщик или гарант не вправе требовать представления иных документов, за исключением документов, предусмотренных настоящей статьей.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Письменное требование Клиента о выплате страхового возмещения по договору страхования ответственности Туроператора или об уплате денежной суммы по банковской гарантии должно быть предъявлено страховщику или гаранту в течение срока действия финансового обеспечения.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Страховщик или гарант обязан удовлетворить требование Клиента о выплате страхового возмещения по договору страхования ответственности Туроператора или об уплате денежной суммы по банковской гарантии не позднее 30 календарных дней после дня получения указанного требования с приложением всех необходимых документов, предусмотренных настоящим приложением. В случаях если с требованиями о выплате страхового возмещения по договору страхования ответственности Туроператора или об уплате денежной суммы по банковской гарантии к страховщику или гаранту обратились одновременно более одного Клиента и общий размер денежных средств, подлежащих выплате, превышает сумму финансового обеспечения, удовлетворение таких требований осуществляется пропорционально суммам денежных средств, указанным в требованиях к сумме финансового обеспечения. Требование о выплате страхового возмещения по договору страхования ответственности Туроператора должно быть предъявлено Клиентом страховщику в течение срока исковой давности, установленного законодательством Российской Федерации.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Страховщик освобождается от выплаты страхового возмещения Клиенту, если Клиент обратился к страховщику с требованием о возмещении упущенной выгоды и (или) компенсации морального вреда, возникших в результате неисполнения или ненадлежащего исполнения Туроператором обязательств по договору о реализации туристского продукта.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00AA045D" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>Страховщик не освобождается от выплаты страхового возмещения Клиенту по договору страхования ответственности Туроператора, если страховой случай наступил вследствие умысла Туроператора.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:r>
+        <w:br w:type="page"/>
+      </w:r>
+    </w:p>
+    
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:keepNext w:val="0"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t xml:space="preserve">3. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>СВЕДЕНИЯ О «ТУРПОМОЩИ»</w:t>
+      </w:r>
+      <w:r w:rsidR="006154A5">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:b/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:br/>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9648" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLook w:val="01E0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="3244"/>
+        <w:gridCol w:w="6404"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00920F5A" w:rsidRPr="00920F5A">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Полное наименование</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="006154A5" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Ассоциация «Объединение туроператоров в сфере выездного туризма «ТУРПОМОЩЬ»</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidTr="006154A5">
+        <w:trPr>
+          <w:trHeight w:val="74"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Сокращенное наименование</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="006154A5" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Ассоциация «ТУРПОМОЩЬ»</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidTr="006154A5">
+        <w:trPr>
+          <w:trHeight w:val="74"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Адрес (место нахождения)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="006154A5" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>101000, г. Москва, ул. Мясницкая, дом 47</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00920F5A" w:rsidRPr="00920F5A">
+        <w:trPr>
+          <w:trHeight w:val="375"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Телефон/факс</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:bCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Телефон:</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t> +7 (495) 981-51-49 (круглосуточно), 8-800-100-41-94 (круглосуточно) </w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="006154A5" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:bCs/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>Факс:</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t> +7 (495) 981-51-49</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00920F5A" w:rsidRPr="00920F5A">
+        <w:trPr>
+          <w:trHeight w:val="352"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3244" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:firstLine="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:b/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:softHyphen/>
+              <w:t>Адрес сайта в сети Интернет</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6404" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+            <w:pPr>
+              <w:pStyle w:val="ConsPlusNormal"/>
+              <w:widowControl/>
+              <w:ind w:left="17" w:firstLine="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00920F5A">
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+                <w:sz w:val="14"/>
+                <w:szCs w:val="14"/>
+              </w:rPr>
+              <w:t>http://www.tourpom.ru/</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="00920F5A">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+          <w:lang w:val="en-US"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00920F5A" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="16"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="567"/>
+        </w:tabs>
+        <w:ind w:left="0" w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          Решение об оказании экстренной помощи Клиенту принимается
+          Ассоциацией «Объединение туроператоров в сфере выездного туризма
+          «ТУРПОМОЩЬ» (далее - Ассоциация «ТУРПОМОЩЬ») на основании обращения
+          Клиента, в котором должно быть ясно выражено намерение Клиента
+          прекратить путешествие и досрочно вернуться к месту его окончания,
+          которое предусмотрено договором.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          Обращение Клиента может быть направлено в Ассоциацию «ТУРПОМОЩЬ»
+          любым способом, позволяющим установить, что обращение исходит
+          от Клиента.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>1.1. Обращение Клиента должно содержать следующую информацию:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>а) фамилия, имя и отчество Клиента (туристов);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>б) адрес места нахождения Клиента (туристов);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>в) номер договора о реализации туристского продукта и наименование туроператора (турагента);</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>г) контактная информация автора обращения;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>д) обстоятельства (факты), свидетельствующие о невозможности исполнения, неисполнении или ненадлежащем исполнении туроператором обязательств по договору о реализации туристского продукта.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>2. Экстренная помощь не оказывается Клиенту в случае, если:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>а) обращение Клиента не содержит сведений, указанных в пункте 1.1.;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>б) обращение Клиента содержит сведения, не соответствующие действительности;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          в) эвакуация российских туристов происходит по решению Президента
+          Российской Федерации в связи с возникновением на территории страны 
+          временного пребывания угрозы безопасности их жизни и здоровья;
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          г) установлены обстоятельства, свидетельствующие об отсутствии
+          оснований для оказания экстренной помощи.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          Решение об оказании экстренной помощи или об отказе в оказании
+          экстренной помощи может быть обжаловано в судебном порядке.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          3. Ассоциация «ТУРПОМОЩЬ» не позднее 24 часов с момента получения
+          обращения Клиента, принимает решение об оказании Клиенту экстренной
+          помощи или об отказе в ее оказании и уведомляет Клиента о принятом
+          решении любым способом, позволяющим установить, что содержание
+          данного решения доведено до сведения Клиента.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          4. Оказание Клиентуэкстренной помощи, отказ в ее оказании, либо
+          отказ Клиента от ее получения оформляется актом.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00CE0120">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          По требованию Клиента Ассоциация «ТУРПОМОЩЬ» обязана предоставить
+          заверенную копию решения об оказании экстренной помощи или об отказе
+          в оказании экстренной помощи.
+        </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00920F5A" w:rsidRPr="00CE0120" w:rsidRDefault="00920F5A" w:rsidP="006154A5">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:firstLine="397"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00920F5A">
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:t>
+          5. Обо всех решениях, связанных с оказанием или отказом в оказании
+          экстренной помощи, либо отказом Клиента от ее получении, Ассоциация
+          «ТУРПОМОЩЬ» не позднее 24 часов уведомляет Федеральное агентство
+          по туризму с использованием информационно-телекоммуникационных сетей
+          общего пользования.
+        </w:t>
+      </w:r>
+    </w:p>
+    
+    
+    
+    
+    <w:p w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidRDefault="007E5DA4">
+      <w:pPr>
+        <w:pStyle w:val="ConsPlusNormal"/>
+        <w:widowControl/>
+        <w:ind w:left="-180" w:firstLine="540"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana"/>
+          <w:sz w:val="14"/>
+          <w:szCs w:val="14"/>
+        </w:rPr>
+        <w:br w:type="page"/>
+      </w:r>
+      <w:r w:rsidR="0088204A" w:rsidRPr="0088204A">
+        <w:rPr>
+          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>Лист бронирования</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="00AA045D" w:rsidRPr="0088204A" w:rsidSect="00BC0EC9">
+      <w:headerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="993" w:right="560" w:bottom="1440" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
